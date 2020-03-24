@@ -3,6 +3,7 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: true,
   fade: false,
+  speed:1000,
   prevArrow: $(".arrow_left"),
     nextArrow: $(".arrow_right")
 
