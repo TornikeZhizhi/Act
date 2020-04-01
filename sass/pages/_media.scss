@@ -1,0 +1,197 @@
+
+
+@media only screen and (max-width: 992px) {
+
+header {
+    padding: 15px 8px;
+   
+}
+
+.header_contact_box:first-child {
+    margin-right: 10px;
+        margin-top: 10px;
+        order: 1;
+}
+
+#header_fb {
+    margin: 0px 10px 0 10px;
+
+}
+.header_contact {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header_contact_box .header_contact_info * {
+    font-size: 13px;
+}
+
+
+
+#imgleft, #imgright {
+	display: none;
+}
+
+.main_wrapper {
+    height: 245px;
+}
+.arrow_left span, .arrow_right span {
+    position: relative;
+    width: 35px;
+    height: 70px;
+}
+
+.arrow_left span img, .arrow_right span img {
+    height: 18px;
+}
+.arrow_left {
+    left: 10px;
+}
+
+.arrow_right {
+    right: 10px;
+}
+
+.slider-for figure h2 {
+   
+    font-size: 18px;
+    width: calc(100% - 110px);
+    text-align: center;
+}
+#about {
+    margin: 30px 0 25px;
+   
+    padding-bottom: 15px;
+}
+.common_title h3 {
+    font-size: 25px;
+    
+}
+.about_text {
+    padding: 0 15px;
+}
+
+.p_left {
+    padding-left: 0px !important;
+}
+.team_description .text-left {
+	text-align: center !important; 
+}
+
+.team_fluid .team_box {
+  
+    padding: 15px 10px 0;
+    margin-bottom: 17px;
+   
+}
+.team_box_wrapper {
+   
+    flex-direction: column;
+}
+
+.team_fluid .team_box .team_left_fluid .team_img a {
+ 
+    height: 230px;
+}
+.team_bg {
+	display: none;
+}
+.team_info_fluid {
+    padding-right: 0px;
+    padding: 0 10px;
+}
+
+.team_box:nth-child(even) .team_box_wrapper .team_left_fluid {
+	order: unset !important; 
+}
+
+footer {
+    flex-direction: column;
+}
+footer > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+footer span {
+    color: #707070;
+    font-family: 'Conv_bpg-arial-webfont';
+    font-size: 12px;
+    }
+
+
+    .created img {
+    	width: 79px;
+    }
+
+
+.book_fluid .book_header > h3 {
+    font-size: 22px;
+}
+.book_fluid {
+    padding: 15px 10px 15px;
+}
+.book_info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book_img {
+	margin-bottom: 15px;
+}
+.book_form form label {
+    
+    font-size: 14px;
+  
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+textarea.form-control {
+    height: 99px;
+}
+.btn_box {
+    text-align: center;
+    margin: 25px 0 23px;
+}
+
+.book_fluid {
+    margin: 20px auto 20px;
+  
+}
+.main-title {
+    padding: 25px 0 0;
+    font-size: 23px;
+}
+.review-section {
+
+    margin: 25px auto 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+.costumer-info {
+    padding: 5px 10px;
+}
+.reserve-hover {
+	height: 60px;
+}
+.reserve a {
+ 
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+.reserve img {
+    width: 58px;
+     background: unset;
+     padding: 0px;
+    height: 29px;
+    object-fit: contain;
+}
+
+}
