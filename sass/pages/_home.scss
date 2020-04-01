@@ -8,6 +8,22 @@
 	 	}
 }
 
+select::-ms-expand {
+    display: none;
+}
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+select {
+	 background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right #ddd;
+    -webkit-appearance: none;
+     background-position-x: 96%;
+}
+
+
 header {
 	background: #fff;
 	    padding: 15px 65px;
@@ -533,7 +549,9 @@ input::-webkit-inner-spin-button {
 	pointer-events: none;
 	opacity: 0.5;
 }
-
+.input-group {
+	width: calc(100% - 18px);
+}
 .book_fluid {
 
 	max-width: 970px;
@@ -541,6 +559,10 @@ input::-webkit-inner-spin-button {
 	background-color: #FCFCFC;
 	border: 1px solid #E5E5E5;
 	padding: 40px  90px 60px;
+	background-image: url("../images/bg.png"),linear-gradient(#FCFCFC,#FCFCFC);
+	background-repeat: no-repeat;
+    background-position: 111% 27%;
+    background-size: 45%, 100%;
 
 	.book_header {
 		text-align: center;
@@ -1114,3 +1136,4 @@ textarea.form-control {
    		 margin: 15px auto 15px;
     }
 }
+

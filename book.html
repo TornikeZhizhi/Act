@@ -194,22 +194,21 @@
 		        <div class="form-group col-md-6 col-12">
 		        	  <label for="text">დაჯავშნის ზუსტი დრო </label>
 		      	<select id="flackSeclect" class="form-control disable">
-		      					<option selected="" disabled="">აირჩიე დრო</option>
-								<option value="11:00">11:00</option>
-								<option value="11:30">11:30</option>
+		      					<option hidden>აირჩიე დრო</option>
+
+								<option value="00:00">00:00</option>
+								<option value="02:00">02:00</option>
+								<option value="04:00">04:00</option>
+								<option value="06:00">06:00</option>
+								<option value="08:00">08:00</option>
+								<option value="10:00">10:00</option>
 								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
 								<option value="14:00">14:00</option>
-								<option value="14:30">14:30</option>
-								<option value="15:00">15:00</option>
-								<option value="15:30">15:30</option>
-								<option value="16:30">16:00</option>
-								<option value="17:00">17:00</option>
-								<option value="17:30">17:30</option>
-								<option value="18:30">18:00</option>
-								<option value="18:30">18:30</option>
+								<option value="16:00">16:00</option>
+								<option value="18:00">18:00</option>
+								<option value="20:00">20:00</option>
+								<option value="22:00">22:00</option>
+							
 				</select>
 			</div>
 		  
@@ -296,22 +295,28 @@
 
 
 	var disableTime = [
-			["14:30","15:30","16:30"],
-			["12:30","18:30","18:00"],
-			["10:30","11:30","12:30"],
-			["10:30","11:30","12:30"],
+			["16:00","12:00","18:00"],
+			[],
+			["00:00","12:00","18:00"],
+			["00:00","12:00","18:00"]
+			
 		 ];
 		 
 	var enableDate = [
 		["2020-04-08", "2020-04-21", "2020-04-30","2020-05-03"]
 	];
-	
+		
+
+	var ChooseIndex = false	
 
 		$(".flatpicker").flatpickr({
   	 		 enable: enableDate[0],
   	 		  onChange: function(selectedDates, dateStr, instance) {
         		
+        		if (ChooseIndex) {
 
+  	 		  	$("#flackSeclect").val(" ");
+        		}
         		$("#flackSeclect").removeClass("disable")
         		$("#flackSeclect option").removeAttr("disabled","disabled");
         		$("#flackSeclect option").css("color","#000");
@@ -332,7 +337,7 @@
         				}
         		}
 
-
+        		ChooseIndex = true
 
    			 }
 			},
