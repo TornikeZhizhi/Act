@@ -993,6 +993,9 @@ textarea.form-control {
   .book_fluid {
     margin: 20px auto 20px; }
 
+  .team_fluid .team_box .team_left_fluid {
+    margin: 0 auto; }
+
   .main-title {
     padding: 25px 0 0;
     font-size: 23px; }
