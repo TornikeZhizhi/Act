@@ -337,7 +337,7 @@ header {
     font-size: 18px;
     font-family: 'Conv_bpg-arial-webfont'; }
 
-#team_social {
+.team_social {
   display: inline-block;
   margin: 10px 0 20px;
   border-radius: 50%;
@@ -347,9 +347,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #team_social i {
+  .team_social i {
     color: #fff; }
-  #team_social img {
+  .team_social img {
     height: 35px;
     width: 35px;
     object-fit: contain; }
@@ -449,10 +449,10 @@ input::-webkit-inner-spin-button {
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: url("../images/quote.png"); }
-  .quote_text #quote {
+  .quote_text .quote {
     display: inline-block;
     position: relative; }
-  .quote_text #quote:before {
+  .quote_text .quote:before {
     content: "";
     position: absolute;
     right: -28px;
@@ -694,6 +694,11 @@ option:disabled {
   font-family: 'Conv_bpg-arial-webfont';
   font-size: 16px;
   margin: 0; }
+
+.team_social_box {
+  display: flex; }
+  .team_social_box a:not(:last-child) {
+    margin-right: 10px; }
 
 .reserve img {
   width: 90px;
