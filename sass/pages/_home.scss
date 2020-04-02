@@ -67,6 +67,11 @@ header {
     align-items: center;
     justify-content: center;
         margin-right: 8px;
+
+         i {
+         	font-size: 18px;
+    color: #000;
+         }
 		}
      
 		img {
@@ -87,7 +92,10 @@ border: 1px solid #000;
 display: flex;
 align-items: center;
 justify-content: center;
-
+		i {
+			font-size: 19px;
+			color: #000;
+		}
 	svg {
 	height: 25px;
 	width: 25px;
@@ -431,7 +439,18 @@ justify-content: center;
 
 	#team_social {
 		display: inline-block;
-		margin: 10px 0 20px;
+		    margin: 10px 0 20px;
+		    border-radius: 50%;
+		    background: #2867B2;
+		    width: 40px;
+		    height: 40px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+
+		    i {
+		    	color: #fff;
+		    }
 		img {
 
 		height: 35px;
@@ -519,9 +538,8 @@ footer {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		svg {
-			height: 25px;
-			fill: #fff;
+		i {
+			color: #fff;
 		}
 	}
 
@@ -670,7 +688,12 @@ input::-webkit-inner-spin-button {
     	text-decoration:underline;
     }
 	}
-
+	i {
+		color: #b53438;
+		font-size: 30px;
+		margin-left: 10px;
+		margin-right: 8px;
+	}
 	img {
 		height: 30px;
     padding-right: 0px;
@@ -945,6 +968,22 @@ span {
 
 .linkedin {
     margin-top: 20px;
+
+    a {
+    	margin: 10px 0 20px;
+    border-radius: 50%;
+    background: #2867B2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+    	color: #fff;
+    	font-size: 18px;
+    }
+    }
 }
 
 .linkedin img:hover {
