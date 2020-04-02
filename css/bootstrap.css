@@ -1858,8 +1858,11 @@ pre code {
 }
 
 .form-control:disabled, .form-control[readonly] {
-  /*background-color: #e9ecef;*/
+  background-color: #e9ecef;cursor: default;
   opacity: 1;
+}
+.flatpicker  {
+  background-color: #fff !important;
 }
 
 select.form-control:focus::-ms-value {

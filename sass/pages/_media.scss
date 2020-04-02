@@ -19,14 +19,25 @@ header {
 }
 .header_contact {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: baseline;
+
 }
 .header_contact_box .header_contact_info * {
     font-size: 13px;
 }
+.reserve-hover {
+	display: none;
+}
 
+.reserve {
+	top: unset;
+	transform: unset;
+	bottom: 0px;
+}
 
+.header_contact_box a.img_link {
+	margin-right: 0;
+}
 
 #imgleft, #imgright {
 	display: none;
@@ -162,6 +173,10 @@ textarea.form-control {
 .book_fluid {
     margin: 20px auto 20px;
   
+}
+
+.header_contact_info {
+	display: none !important;
 }
 .team_fluid .team_box .team_left_fluid {
 	margin: 0 auto;

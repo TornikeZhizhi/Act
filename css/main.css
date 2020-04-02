@@ -321,7 +321,8 @@ header {
           object-fit: contain; }
 
 .team_info_fluid {
-  padding-right: 100px; }
+  padding-right: 100px;
+  margin-left: 10px; }
   .team_info_fluid .team_info_header h4 a {
     font-size: 22px;
     color: #000000;
@@ -407,11 +408,48 @@ footer {
     text-align: center; }
   footer .created {
     text-align: right; }
+    footer .created img {
+      width: 75px; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+.quote_text {
+  position: relative; }
+  .quote_text * {
+    font-size: 16px;
+    color: #202020;
+    font-family: 'Conv_bpg-arial-webfont';
+    text-indent: 40px; }
+  .quote_text:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 4px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/quote.png"); }
+  .quote_text #quote {
+    display: inline-block;
+    position: relative; }
+  .quote_text #quote:before {
+    content: "";
+    position: absolute;
+    right: -28px;
+    bottom: -13px;
+    height: 30px;
+    z-index: 1;
+    width: 30px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/quote1.png"); }
 
 #flackSeclect.disable {
   pointer-events: none;
@@ -878,11 +916,21 @@ textarea.form-control {
 
   .header_contact {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column; }
+    align-items: baseline; }
 
   .header_contact_box .header_contact_info * {
     font-size: 13px; }
+
+  .reserve-hover {
+    display: none; }
+
+  .reserve {
+    top: unset;
+    transform: unset;
+    bottom: 0px; }
+
+  .header_contact_box a.img_link {
+    margin-right: 0; }
 
   #imgleft, #imgright {
     display: none; }
@@ -992,6 +1040,9 @@ textarea.form-control {
 
   .book_fluid {
     margin: 20px auto 20px; }
+
+  .header_contact_info {
+    display: none !important; }
 
   .team_fluid .team_box .team_left_fluid {
     margin: 0 auto; }
