@@ -1004,7 +1004,13 @@ span {
 }
 
 
+.form-name>div {
+	width: calc(50% - 16px);
 
+	input {
+		width: 100% !important;
+	}
+}
 .see-more {
     color: #DA3429 !important;
     font-family: 'Conv_bpg-arial-webfont';

@@ -249,8 +249,21 @@
         <div>
             <form action="">
                 <div class="form-name">
-                    <input type="text" placeholder="სახელი გვარი">
-                    <input type="email" placeholder="თქვენი ელფოსტა">
+
+                    <div>
+                        <input type="text" name="name" placeholder="name">
+                        <div class="form_error">
+                          <span data-validate-for="name" class="visible">The name field is required.</span>
+                        </div>
+                    </div>
+
+                    <div> 
+                        <input type="text" name="email" placeholder="email">
+                        <div class="form_error">
+                          <span data-validate-for="email" class="visible">The email field is required.</span>
+                        </div>
+                    </div>
+                    
                 </div>
 
                 <div>

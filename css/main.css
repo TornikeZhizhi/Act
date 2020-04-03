@@ -759,6 +759,11 @@ span {
   opacity: .6;
   transition: .3s; }
 
+.form-name > div {
+  width: calc(50% - 16px); }
+  .form-name > div input {
+    width: 100% !important; }
+
 .see-more {
   color: #DA3429 !important;
   font-family: 'Conv_bpg-arial-webfont';
@@ -1098,6 +1103,9 @@ textarea.form-control {
     margin: 25px auto 5px;
     padding-top: 25px;
     padding-bottom: 25px; }
+
+  .form-name > div {
+    width: 100%; }
 
   .costumer-info {
     padding: 5px 10px; }
