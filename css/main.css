@@ -334,7 +334,7 @@ header {
     color: #000000;
     margin-bottom: 10px; }
   .team_info_fluid .team_info_header span {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Conv_bpg-arial-webfont'; }
 
 .team_social {
@@ -736,9 +736,11 @@ span {
   font-size: 18px;
   font-family: 'Conv_bpg-arial-webfont'; }
 
-.linkedin {
-  margin-top: 20px; }
-  .linkedin a {
+.inner_socials {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; }
+  .inner_socials a {
     margin: 10px 0 20px;
     border-radius: 50%;
     background: #2867B2;
@@ -747,11 +749,13 @@ span {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .linkedin a i {
+    .inner_socials a:not(:last-child) {
+      margin-right: 8px; }
+    .inner_socials a i {
       color: #fff;
       font-size: 18px; }
 
-.linkedin img:hover {
+.inner_socials img:hover {
   opacity: .6;
   transition: .3s; }
 
@@ -892,6 +896,9 @@ textarea::placeholder {
   flex-direction: column;
   padding: 15px 10px;
   word-break: break-word; }
+
+.form-control {
+  height: 52px; }
 
 textarea.form-control {
   height: 150px; }
