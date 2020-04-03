@@ -512,6 +512,13 @@ input::-webkit-inner-spin-button {
     font-family: 'Conv_bpg-arial-webfont';
     color: #202020; }
 
+.custom-control-label ~ a {
+  font-family: 'Conv_bpg-arial-webfont';
+  font-size: 16px;
+  margin-left: 5px; }
+  .custom-control-label ~ a:hover {
+    text-decoration: underline; }
+
 .invoice a {
   display: flex;
   align-items: center;
@@ -987,7 +994,7 @@ textarea.form-control {
     display: none; }
 
   .main_wrapper {
-    height: 245px; }
+    height: 150px; }
 
   .arrow_left span, .arrow_right span {
     position: relative;

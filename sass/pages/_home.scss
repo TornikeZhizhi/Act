@@ -676,6 +676,16 @@ input::-webkit-inner-spin-button {
 	 	 }
 	 }
 }
+.custom-control-label ~ a{
+
+font-family: 'Conv_bpg-arial-webfont';
+	font-size: 16px;
+	margin-left: 5px;
+	&:hover{
+		text-decoration:underline;
+	}
+	
+}
 
 .invoice {
 
