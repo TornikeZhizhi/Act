@@ -389,13 +389,14 @@ header {
   max-width: 1170px;
   margin: 0 auto; }
 
-.team_box:nth-child(even) .team_box_wrapper .team_left_fluid {
-  order: 1; }
-
-.team_box:nth-child(even) .team_bg {
-  right: unset;
-  left: 2%; }
-
+/*
+.team_box:nth-child(even) .team_box_wrapper .team_left_fluid{
+	order: 1;
+}
+.team_box:nth-child(even) .team_bg{
+	right: unset;
+	left: 2%;
+}*/
 footer {
   background-color: #242424;
   padding: 15px 70px;
@@ -730,8 +731,9 @@ option:disabled {
 .consultant-info {
   width: 100%; }
 
-.consultant-info p {
-  margin-top: 40px;
+.consultant-info
+p {
+  margin-top: 10px;
   font-family: 'Conv_bpg-arial-webfont';
   max-height: 173px;
   overflow: hidden; }
@@ -742,16 +744,20 @@ option:disabled {
   font-weight: inherit;
   padding-bottom: 10px; }
 
+.position_bold {
+  font-weight: bold; }
+  .position_bold * {
+    font-weight: bold; }
+
 span {
   font-size: 18px;
   font-family: 'Conv_bpg-arial-webfont'; }
 
 .inner_socials {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap; }
   .inner_socials a {
-    margin: 10px 0 20px;
+    margin: 10px 0 5px;
     border-radius: 50%;
     background: #2867B2;
     width: 40px;
