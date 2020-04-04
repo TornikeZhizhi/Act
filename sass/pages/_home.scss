@@ -501,12 +501,31 @@ justify-content: center;
 .team_box_wrapper {
 	display: flex;
 	align-items: flex-start;
-	border-bottom: 1px solid #F2F2F2;
+	border-bottom: 2px solid #F2F2F2;
 	padding-bottom: 10px;
 	    max-width: 1170px;
     margin: 0 auto;
 
 
+}
+.error {
+	min-height: calc(100vh - 171px);
+}
+.error-img {
+	width: 40px;
+	height: 40px;
+	border:2px solid red;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	    margin: 36px auto 0px;
+	svg {
+
+		width: 30px;
+		height: 20px;
+		fill: red;
+	}
 }
 
 .team_description  {

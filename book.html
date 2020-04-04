@@ -300,6 +300,13 @@
 
 <script type="text/javascript">
 
+var todayn = new Date();
+todayn.setDate(todayn.getDate() + 1 );
+var dd = String(todayn.getDate()).padStart(2, '0');
+var mm = String(todayn.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = todayn.getFullYear();
+
+todayn = yyyy + '/' + mm + '/' + dd;
 
 	var disableTime = [
 			["16:00","12:00","18:00"],
@@ -310,13 +317,15 @@
 		 ];
 		 
 	var enableDate = [
-		["2020-04-08", "2020-04-21", "2020-04-30","2020-05-03"]
+		["2020-04-05", "2020-04-21", "2020-04-30","2020-05-03"]
 	];
 		
 
 	var ChooseIndex = false	
 
 		$(".flatpicker").flatpickr({
+			minDate: todayn,
+
   	 		 enable: enableDate[0],
   	 		  onChange: function(selectedDates, dateStr, instance) {
         		
