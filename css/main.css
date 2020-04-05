@@ -100,7 +100,7 @@ header {
     object-fit: contain; }
 
 .competetion {
-  margin: 10px 0; }
+  margin: 10px; }
   .competetion span {
     background-color: #F3F3F3;
     padding: 5px 10px;
@@ -328,11 +328,15 @@ header {
       .team_fluid .team_box .team_left_fluid .team_img a {
         display: block;
         width: 100%;
-        height: 350px; }
+        height: 350px;
+        overflow: hidden; }
         .team_fluid .team_box .team_left_fluid .team_img a img {
           width: 100%;
           height: inherit;
-          object-fit: contain; }
+          object-fit: contain;
+          transition: all .4s; }
+          .team_fluid .team_box .team_left_fluid .team_img a img:hover {
+            transform: scale(1.1); }
 
 .team_info_fluid {
   padding-right: 100px;
@@ -672,7 +676,7 @@ option:disabled {
   margin: 75px 0 40px; }
 
 .main-container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto; }
 
 .successful span {
@@ -763,14 +767,20 @@ option:disabled {
   object-fit: contain; }
 
 .consultant-section {
-  display: flex; }
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  border-bottom: 1px solid #F2F2F2;
+  padding-bottom: 20px; }
 
 .consultant-img {
   width: 70%;
   padding-right: 30px; }
 
 .consultant-img img {
-  width: 100%; }
+  width: 100%;
+  height: 340px;
+  object-fit: contain; }
 
 .consultant-info {
   width: 100%; }
@@ -789,7 +799,11 @@ p {
   padding-bottom: 10px; }
 
 .position_bold {
-  font-weight: bold; }
+  font-weight: bold;
+  border-bottom: 2px solid #da3429;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 5px; }
   .position_bold * {
     font-weight: bold; }
 
@@ -838,13 +852,16 @@ span {
 .see-more span:hover {
   opacity: .6; }
 
-.review.more-info-text {
-  margin-top: 15px;
-  font-family: 'Conv_bpg-arial-webfont'; }
-  .review.more-info-text ul li {
+.review {
+  max-width: 800px;
+  margin: 0 auto; }
+  .review.more-info-text {
+    margin-top: 15px;
     font-family: 'Conv_bpg-arial-webfont'; }
-  .review.more-info-text * {
-    font-family: 'Conv_bpg-arial-webfont'; }
+    .review.more-info-text ul li {
+      font-family: 'Conv_bpg-arial-webfont'; }
+    .review.more-info-text * {
+      font-family: 'Conv_bpg-arial-webfont'; }
 
 .review {
   margin-bottom: 40px;
@@ -914,8 +931,11 @@ textarea::placeholder {
 .form-name input {
   width: calc(50% - 16px); }
 
-.review.more-info-text ul {
-  padding-left: 15px; }
+.review.more-info-text {
+  max-width: 800px;
+  margin: 0 auto; }
+  .review.more-info-text ul {
+    padding-left: 15px; }
 
 .submit {
   width: 100%;
@@ -1174,6 +1194,9 @@ textarea.form-control {
 
   .reserve-hover {
     height: 60px; }
+
+  .consultant-img img {
+    height: 200px; }
 
   .reserve a {
     cursor: pointer;
