@@ -67,10 +67,6 @@ else {
 }
 });
 
-$(".see-more").click(function () {
-    $(".more-info-text").slideToggle();
-});
-
 if ($("#myInput1").length > 0) {
 	document.querySelector('.custom-file-input').addEventListener('change',function(e){
   var fileName = document.getElementById("myInput1").files[0].name;

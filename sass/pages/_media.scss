@@ -14,7 +14,7 @@ header {
 }
 
 #header_fb {
-    margin: 0px 10px 0 10px;
+    margin: 0px 7px 0 0px;
 
 }
 .header_contact {
@@ -25,6 +25,7 @@ header {
 .header_contact_box .header_contact_info * {
     font-size: 13px;
 }
+
 .reserve-hover {
 	display: none;
 }
@@ -35,9 +36,7 @@ header {
 	bottom: 0px;
 }
 
-.header_contact_box a.img_link {
-	margin-right: 0;
-}
+
 
 #imgleft, #imgright {
 	display: none;
