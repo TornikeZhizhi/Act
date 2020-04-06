@@ -4,6 +4,8 @@ $('.slider-for').slick({
   arrows: true,
   fade: false,
   speed:1000,
+  autoplay: true,
+  autoplaySpeed: 3000,
   prevArrow: $(".arrow_left"),
     nextArrow: $(".arrow_right")
 
