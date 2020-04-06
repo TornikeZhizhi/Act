@@ -144,7 +144,7 @@ $(document).on('input',"#email", function(e){
 
   
     var valueBefore =  [...e.target.value.split('')]
-    console.log(e.target.value)
+ 
     valueBefore = valueBefore.map(el => {
       alpabet.map((lette, i) => {
         if(lette.hasOwnProperty(el)){
