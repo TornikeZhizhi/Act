@@ -209,6 +209,20 @@ textarea.form-control {
     height: 80px;
     width: 100px;
 }
+.common_text_fluid {
+	padding: 10px 15px;
+}
+
+.common_text_fluid .common_text_title {
+   
+    margin-bottom: 13px;
+    margin-top: 13px;
+
+    h2 {
+    	font-size: 22px;
+    }
+}
+
 .reserve img {
     width: 58px;
      background: unset;
