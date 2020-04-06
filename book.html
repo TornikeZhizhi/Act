@@ -315,8 +315,9 @@
 <script src="js/slick.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="js/main.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
 <script type="text/javascript">
+
 
 var todayn = new Date();
 todayn.setDate(todayn.getDate() + 1 );
@@ -326,59 +327,65 @@ var yyyy = todayn.getFullYear();
 
 todayn = yyyy + '/' + mm + '/' + dd;
 
-	var disableTime = [
-			["16:00","12:00","18:00"],
-			[],
-			["00:00","12:00","18:00"],
-			["00:00","12:00","18:00"]
-			
-		 ];
-		 
-	var enableDate = [
-		["2020-04-05", "2020-04-21", "2020-04-30","2020-05-03"]
-	];
-		
 
-	var ChooseIndex = false	
+ var $available_dates = [{"date":"2020-04-07 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-09 00:00:00","times":{"1":"16:00"}},{"date":"2020-04-14 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-16 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-21 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-23 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-28 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-30 00:00:00","times":["15:00","16:00"]}];
+  var $times = [];
+
+  $.each($available_dates,function(key,value){
+
+    var $str = value.date.split(' ');
+    console.log($str)
+    var $date = $str[0];
+    $times[$date] = value.times;
+
+  })
+
+	var enableDate = [
+          '2020-04-06',
+          '2020-04-07',
+          '2020-04-09',
+          '2020-04-14',
+          '2020-04-16',
+          '2020-04-21',todayn,
+          '2020-04-23',
+          '2020-04-28',
+          '2020-04-30',
+      ];
 
 		$(".flatpicker").flatpickr({
-			minDate: todayn,
-
-  	 		 enable: enableDate[0],
+        minDate: todayn,
+  	 		 enable: enableDate,
   	 		  onChange: function(selectedDates, dateStr, instance) {
-        		
-        		if (ChooseIndex) {
 
-  	 		  	$("#flackSeclect").val(" ");
-        		}
-        		$("#flackSeclect").removeClass("disable")
-        		$("#flackSeclect option").removeAttr("disabled","disabled");
-        		$("#flackSeclect option").css("color","#000");
-        		var flatValue = $(".flatpicker").val();
+            $("#flackSeclect option").attr('disabled','disabled');
 
-        		for (var i = 0; i < enableDate[0].length; i++) {
-        			if (flatValue == enableDate[0][i]) {
+            var $nowDate = moment().format('Y-MM-DD');
+            var $nowTime = moment().format('HH:mm');
 
-        				var dateIndex =i
+        		if (dateStr in $times){
 
-        				var disabledTime = disableTime[i]
+            $.each($times[dateStr],function(key,value){
 
-        				for (var x = 0; x < disableTime[i].length; x++) {
-	        				$("#flackSeclect option[value='"+ disableTime[i][x]+"']").attr("disabled","disabled");
-	        				$("#flackSeclect option[value='"+ disableTime[i][x]+"']").css("opacity","0");
-        				}
 
-        				}
-        		}
+                if($nowDate == dateStr && value > $nowTime){
+                  $("#flackSeclect option[value='"+ value+"']").attr("disabled",false);
+  	        		  $("#flackSeclect option[value='"+ value+"']").css("opacity","1");
+                }
 
-        		ChooseIndex = true
+                if($nowDate !== dateStr){
+                  $("#flackSeclect option[value='"+ value+"']").attr("disabled",false);
+  	        		  $("#flackSeclect option[value='"+ value+"']").css("opacity","1");
+                }
 
+              })
+            }
    			 }
 			},
 
 
 			);
 
+	</script>
 
 	</script>
 </body>
