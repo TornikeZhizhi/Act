@@ -118,7 +118,7 @@ header {
 
 .share_icon {
   max-width: 800px;
-  margin: 0 auto; }
+  margin: 25px auto 0; }
 
 .competetion {
   margin: 10px; }
@@ -1077,9 +1077,11 @@ textarea.form-control {
   header {
     padding: 15px 8px; }
 
-  .header_contact_box:first-child {
-    margin-right: 10px;
-    order: 1; }
+  .reserve a span {
+    font-size: 13px; }
+
+  .reserve svg {
+    height: 36px; }
 
   .header_contact_box a.img_link {
     margin-right: 5px; }

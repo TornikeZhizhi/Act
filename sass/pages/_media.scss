@@ -7,11 +7,15 @@ header {
    
 }
 
-.header_contact_box:first-child {
-    margin-right: 10px;
-
-        order: 1;
+.reserve a span {
+	font-size: 13px;
 }
+
+.reserve svg {
+	 
+    height: 36px;
+}
+
 .header_contact_box a.img_link {
 	margin-right: 5px;
 }
