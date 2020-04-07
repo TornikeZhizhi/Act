@@ -118,10 +118,13 @@ header {
     margin-right: 10px;
 	}
 }
-
-
+.header_contact_box>a {
+	margin: 0 10px;
+}
+.header_contact .header_contact_box:last-child .header_contact_info{
+	margin-right: 60px;
+}
 #header_fb{ 
-margin: 0 30px 0  60px;		
 width: 40px;
 height: 40px;
 flex: 0 0 40px;
