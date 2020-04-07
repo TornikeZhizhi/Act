@@ -217,7 +217,7 @@
 		        </div>
 		        <div class="form-group col-md-6 col-12">
 		        	  <label for="text">დაჯავშნის ზუსტი დრო </label>
-		      	<select id="flackSeclect" class="form-control disable">
+		      	<select id="flackSeclect" class="form-control">
 		      					<option hidden>აირჩიე დრო</option>
 
 								<option value="00:00">00:00</option>
@@ -319,14 +319,6 @@
 <script type="text/javascript">
 
 
-var todayn = new Date();
-todayn.setDate(todayn.getDate() + 1 );
-var dd = String(todayn.getDate()).padStart(2, '0');
-var mm = String(todayn.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = todayn.getFullYear();
-
-todayn = yyyy + '/' + mm + '/' + dd;
-
 
  var $available_dates = [{"date":"2020-04-07 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-09 00:00:00","times":{"1":"16:00"}},{"date":"2020-04-14 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-16 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-21 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-23 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-28 00:00:00","times":["15:00","16:00"]},{"date":"2020-04-30 00:00:00","times":["15:00","16:00"]}];
   var $times = [];
@@ -339,10 +331,41 @@ todayn = yyyy + '/' + mm + '/' + dd;
     $times[$date] = value.times;
 
   })
-  console.log(moment().format('LT'))
+
+
+
+  var mindateAfterSixHour;
+ 
+
+	function checker(){
+
+    var d = new Date();
+    var h = d.getHours();
+  
+     var m = d.getMinutes();
+      if(h > 18){
+   
+      return true
+      }
+      if(h === 18 && m > 0) {
+        return true
+    
+      }
+      return false
+	}
+	if (checker()) {
+		mindateAfterSixHour = moment().add(1,'days').format('Y-MM-DD"')
+
+	}else {
+		mindateAfterSixHour = moment().format('Y-MM-DD"')
+	}
+	
+ 
+
 	var enableDate = [
           '2020-04-06',
           '2020-04-07',
+          '2020-04-08',
           '2020-04-09',
           '2020-04-14',
           '2020-04-16',
@@ -353,7 +376,7 @@ todayn = yyyy + '/' + mm + '/' + dd;
       ];
 
 		$(".flatpicker").flatpickr({
-        // minDate: moment().add(1,'days').format('Y-MM-DD"'),
+        minDate: mindateAfterSixHour,
   	 		 enable: enableDate,
   	 		  onChange: function(selectedDates, dateStr, instance) {
 

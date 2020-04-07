@@ -9,7 +9,7 @@ header {
 
 .header_contact_box:first-child {
     margin-right: 10px;
-        margin-top: 10px;
+
         order: 1;
 }
 .header_contact_box a.img_link {
@@ -22,7 +22,7 @@ header {
 }
 .header_contact {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 
 }
 .header_contact_box .header_contact_info * {
