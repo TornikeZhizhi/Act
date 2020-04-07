@@ -164,8 +164,10 @@ $(document).on('input',"#email", function(e){
 
  $(document).ready(function(){
  var url = window.location.href
- 
+  if (document.getElementById("share")) {
     document.getElementById("share").setAttribute("data-href",url)
+  }
+    
  })
 
 

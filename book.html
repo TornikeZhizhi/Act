@@ -334,26 +334,26 @@ todayn = yyyy + '/' + mm + '/' + dd;
   $.each($available_dates,function(key,value){
 
     var $str = value.date.split(' ');
-    console.log($str)
+    
     var $date = $str[0];
     $times[$date] = value.times;
 
   })
-
+  console.log(moment().format('LT'))
 	var enableDate = [
           '2020-04-06',
           '2020-04-07',
           '2020-04-09',
           '2020-04-14',
           '2020-04-16',
-          '2020-04-21',todayn,
+          '2020-04-21',
           '2020-04-23',
           '2020-04-28',
           '2020-04-30',
       ];
 
 		$(".flatpicker").flatpickr({
-        minDate: todayn,
+        // minDate: moment().add(1,'days').format('Y-MM-DD"'),
   	 		 enable: enableDate,
   	 		  onChange: function(selectedDates, dateStr, instance) {
 
