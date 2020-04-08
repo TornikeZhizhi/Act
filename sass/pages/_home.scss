@@ -105,6 +105,15 @@ header {
 	}
 }
 
+.language_box {
+	display: flex;
+	align-items: center;
+	a {
+		color: #000;
+
+	}
+}
+
 .share_icon {
 	max-width: 800px;
 	margin: 25px auto 0;
