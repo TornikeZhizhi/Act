@@ -110,7 +110,17 @@ header {
 	align-items: center;
 	a {
 		color: #000;
+		text-transform: uppercase;
 
+	}
+}
+
+footer>div:first-child {
+
+	display: flex;
+	a {
+
+		margin-right: 10px;
 	}
 }
 

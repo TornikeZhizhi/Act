@@ -120,7 +120,13 @@ header {
   display: flex;
   align-items: center; }
   .language_box a {
-    color: #000; }
+    color: #000;
+    text-transform: uppercase; }
+
+footer > div:first-child {
+  display: flex; }
+  footer > div:first-child a {
+    margin-right: 10px; }
 
 .share_icon {
   max-width: 800px;
