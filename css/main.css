@@ -1125,7 +1125,7 @@ textarea.form-control {
   .reserve {
     top: unset;
     transform: unset;
-    bottom: 0px; }
+    bottom: 48px; }
 
   #imgleft, #imgright {
     display: none; }
