@@ -271,6 +271,30 @@ footer > div:first-child {
   border-bottom: 1px solid #E5E5E5;
   padding-bottom: 40px; }
 
+.team_book a {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 75px);
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  align-items: center;
+  color: #686868;
+  font-size: 18px;
+  margin: 10px auto 0;
+  padding: 12px 0;
+  transition: all .3s; }
+  .team_book a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 8px;
+    transition: all .3s; }
+  .team_book a:hover {
+    background-color: #DA3429;
+    color: #fff; }
+    .team_book a:hover img {
+      filter: brightness(0) invert(1); }
+
 .common_title {
   text-align: center; }
   .common_title h3 {
@@ -1093,9 +1117,22 @@ textarea.form-control {
     padding: 10px 0;
     max-width: 970px;
     margin: 15px auto 15px; } }
+.review-section > div:nth-child(2) {
+  display: none; }
+
+.review-section > div:nth-child(1) {
+  text-align: center; }
+
+.review-section > div:nth-child(1) h2 {
+  cursor: pointer;
+  display: inline-block; }
+
 @media only screen and (max-width: 992px) {
   header {
     padding: 15px 1px; }
+
+  .team_book a {
+    width: 100%; }
 
   .reserve a span {
     font-size: 13px; }
