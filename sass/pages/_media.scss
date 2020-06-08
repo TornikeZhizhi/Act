@@ -12,12 +12,12 @@ header {
 }
 
 .reserve a span {
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .reserve svg {
 
-    height: 36px;
+    height: 27px;
 }
 
 .header_contact_box a.img_link {
@@ -214,11 +214,15 @@ textarea.form-control {
 .consultant-img img {
 	height: 200px;
 }
+.reserve {
+    width: 100%;
+}
 .reserve a {
  
     cursor: pointer;
-    height: 80px;
-    width: 100px;
+    height: 55px;
+    width: 100%;
+    flex-direction: unset;
 }
 .common_text_fluid {
 	padding: 10px 15px;
