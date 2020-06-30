@@ -163,12 +163,89 @@ $(document).on('input',"#email", function(e){
 
    })
 
+$(document).on("click",function(){
+   $(".dropdown").slideUp()
+})
+$(".nav_dropdown a").click(function(e){
+  e.preventDefault()
+  e.stopPropagation()
+    $(".dropdown").slideDown()
+})
+$(".dropdown").click(function(e){
+  e.stopPropagation()
+})
 
 
 
+var $headerCont = $("header");
+// var $subHeader = $(".sub-header");
+var prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+
+  if (prevScrollpos > currentScrollPos) {
+    $headerCont.removeClass("sticky");
+  } else {
+    $headerCont.addClass("sticky");
+  }
+
+  prevScrollpos = currentScrollPos;
+};
 
 
 
+var quantity = [Number($(".about_tabs_box").eq(0).find("span").text()),
+Number($(".about_tabs_box").eq(1).find("span").text())];
+
+    var tabOffsetx = $(".about_tabs_fluid");
+
+    if(tabOffsetx.length){
+
+      var offset = tabOffsetx.offset().top;
+      var windowHeight = $(window).height()/1.1;
+
+      if ($(window).scrollTop() > offset - windowHeight) {
+
+          $(".about_tabs_box").each(function(index){
+            var x = 0;
+            var k = setInterval(function(){
+            if (x == quantity[index] || x >= quantity[index] ) {
+              clearInterval(k)
+              x = quantity[index]
+            }
+            $(".about_tabs_box span").eq(index).text(x)
+            x+=2;
+          },1/100);
+          })
+      }else {
+
+          $(window).on("scroll",function(){
+
+          var sc = $(window).scrollTop()
+          console.log(sc)
+          if (sc > offset - windowHeight) {
+            $(".about_tabs_box").each(function(index){
+              var x = 0;
+              var k = setInterval(function(){
+              if (x == quantity[index] || x >= quantity[index]) {
+                clearInterval(k)
+                x = quantity[index]
+              }
+              $(".about_tabs_box span").eq(index).text(x)
+              x+=2;
+            },1/100);
+            })
+
+            $(window).off("scroll");
+         }
+
+      })
+    }
+
+  }
+
+ 
 
 
 
