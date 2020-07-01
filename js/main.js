@@ -166,10 +166,10 @@ $(document).on('input',"#email", function(e){
 $(document).on("click",function(){
    $(".dropdown").slideUp()
 })
-$(".nav_dropdown a").click(function(e){
+$(".nav_dropdown>a").click(function(e){
   e.preventDefault()
   e.stopPropagation()
-    $(".dropdown").slideDown()
+    $(".dropdown").slideToggle()
 })
 $(".dropdown").click(function(e){
   e.stopPropagation()
