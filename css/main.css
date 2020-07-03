@@ -1717,6 +1717,43 @@ a[aria-label=Next] {
   .template_download_box a:hover {
     background-color: #E5E5E5; }
 
+.fq_container {
+  max-width: 780px;
+  margin: 0 auto; }
+
+.fq_fluid {
+  min-height: 55vh; }
+
+.fq_box {
+  margin-bottom: 15px; }
+
+.fq_title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px;
+  cursor: pointer; }
+  .fq_title h4 {
+    font-size: 18px; }
+  .fq_title img {
+    height: 10px;
+    filter: grayscale(100%);
+    transform: rotate(180deg);
+    transition: all .4s; }
+  .fq_title.active h4 {
+    color: #DA3429; }
+  .fq_title.active img {
+    transform: rotate(0deg);
+    filter: grayscale(0%); }
+
+.anwser_box {
+  padding: 10px;
+  display: none; }
+  .anwser_box * {
+    font-size: 16px;
+    color: #202020;
+    font-family: 'Conv_bpg-arial-webfont'; }
+
 @media only screen and (max-width: 992px) {
   header {
     padding: 15px 1px; }

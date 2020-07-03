@@ -245,7 +245,25 @@ Number($(".about_tabs_box").eq(1).find("span").text())];
 
   }
 
- 
+   $('.fq_title').click(function () {
+
+
+        // $(".fq_title").not(this).find(".down-arrow").removeClass("rotate")
+        $(".fq_title").not(this).next(".anwser_box").slideUp()
+        $(".fq_title").not(this).removeClass('active')
+
+        // $(this).find($('.down-arrow')).toggleClass('rotate');
+        $(this).next('.anwser_box').slideToggle();
+        $(this).toggleClass('active');
+    })
+   
+ // $(".fq_title").click(function(){
+
+ //  $(".anwser_box").slideUp()
+
+ //  $(this).next(".anwser_box").slideToggle()
+
+ // })
 
 
 
