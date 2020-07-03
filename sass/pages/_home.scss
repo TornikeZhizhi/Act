@@ -2253,7 +2253,7 @@ a[aria-label=Next] {
 	}
 }
 
-.news_inner_facebook_comment_box {
+.facebook_comment_box {
 	max-width: 770px;
 	margin: 50px auto;
 }
@@ -2265,9 +2265,148 @@ a[aria-label=Next] {
 
 .news_inner_bottom_title {
 	margin-bottom: 20px;
-	padding-left: 15px;
+	padding-left: 30px;
 	h4 {
 		color: #202020;
 		font-size: 32px;
+	}
+}
+
+.blogs_fluid {
+
+	.blog_container {
+
+		display: flex;
+		max-width: 1170px;
+		margin: 0 auto;
+
+		.blog_left_tabs {
+
+			flex: 0 0 370px;
+			max-width: 370px;
+
+			.blog_tabs {
+
+				ul {
+
+					li {
+						
+						a {
+
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							color: #202020;
+							font-size: 18px;
+							padding: 10px 20px 10px 15px;
+							border-bottom: 1px solid #D9D9D9;
+							font-family: 'Conv_bpg-arial-webfont';
+							span {
+
+							transition: all .4s;
+							}
+							&.active {
+								background-color: #F9F9F9;
+								color: #DA3429;
+								img {
+									opacity: 1 !important;
+								}
+							}
+
+							&:hover {
+								span {
+
+									transform: translateX(4px);
+								}
+								img{
+									transform: translateX(4px);
+								}
+							}
+							img {
+								height: 13px;
+								opacity: .5;
+								transition: all .4s;
+							}
+						}
+					}
+				}
+			}
+
+			.blog_tabs_title {
+				background-color: #202020;
+				text-align: center;
+				padding: 11px 5px;
+				 span {
+				 	color: #fff;
+				 	font-size: 18px;
+				 }
+			}
+		}
+	}
+}
+.blog_wrapper {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+.blog_box_wrapper {
+	padding-left: 40px;
+
+
+
+	.blog_box_img {
+		width: 100%;
+		height: 60vh;
+		object-fit: cover;
+	}
+
+	.blog_date {
+		display: flex;
+		align-items: center;
+		margin: 10px 0;
+		span {
+			color: #707070;
+			font-size: 16px;
+		}
+
+		.blog_line {
+			flex-grow: 1;
+		    width: 100%;
+		    height: 1px;
+		    background-color: #D9D9D9;
+		    margin-left: 5%;
+		    position: relative;
+		}
+	}
+
+	.blog_title {
+
+		h4 {
+			line-height: 19px;
+			color: #202020;
+				font-size: 18px;
+				transition: all .4s;
+			a {
+				color: #202020;
+				font-size: 18px;
+				transition: all .4s;
+
+				&:hover {
+					color:#DA3429;
+				}
+			}
+		}
+	}
+}
+
+.blogs_fluid {
+	padding-bottom: 50px;
+}
+
+.blog_text {
+	margin: 20px 0 30px;
+	* {
+		color: #202020;
+		font-size: 16px;
+		font-family: 'Conv_bpg-arial-webfont';
 	}
 }
