@@ -1706,6 +1706,17 @@ a[aria-label=Next] {
     font-size: 16px;
     font-family: 'Conv_bpg-arial-webfont'; }
 
+.template_download_box a {
+  background-color: #fff;
+  font-family: 'Conv_bpg-arial-webfont';
+  padding: 12px 11px;
+  border: 1px solid #202020;
+  transition: all .4s;
+  color: #202020;
+  display: block; }
+  .template_download_box a:hover {
+    background-color: #E5E5E5; }
+
 @media only screen and (max-width: 992px) {
   header {
     padding: 15px 1px; }

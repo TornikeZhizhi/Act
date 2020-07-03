@@ -2410,3 +2410,20 @@ a[aria-label=Next] {
 		font-family: 'Conv_bpg-arial-webfont';
 	}
 }
+
+.template_download_box {
+
+	a {
+		    background-color: #fff;
+		    font-family: 'Conv_bpg-arial-webfont';
+		    padding: 12px 11px;
+		    border: 1px solid #202020;
+		    transition: all .4s;
+		    color: #202020;
+		    display: block;
+		    &:hover{
+
+		    	background-color:#E5E5E5;
+		    }
+	}
+}
