@@ -257,13 +257,29 @@ Number($(".about_tabs_box").eq(1).find("span").text())];
         $(this).toggleClass('active');
     })
    
- // $(".fq_title").click(function(){
 
- //  $(".anwser_box").slideUp()
+var textReview = true   
+$(".reviews_readmore").click(function(){
+  
+  $(this).parent().find(".reviews_text").toggleClass("show");
+  $(this).toggleClass("show")
 
- //  $(this).next(".anwser_box").slideToggle()
 
- // })
+  $(".reviews_readmore").each(function(index){
 
+    
+  })
+
+  if (textReview) {
+    $(".reviews_readmore span").text("დახურვა")
+    textReview = !textReview
+  }else {
+    $(".reviews_readmore span").text("მეტის ნახვა")
+    textReview = !textReview
+   
+  }
+
+  
+})
 
 

@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     outline:none;
-    list-style-type:none;
      border: none;
      text-decoration: none;
 
@@ -20,8 +19,8 @@ ul,h1,h2,h3,h4 {
     margin: 0px;
 }
 
-li {
-    list-style-type: none;
+ul {
+    padding-left:15px;
 }
 
 a {
