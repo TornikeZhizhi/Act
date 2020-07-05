@@ -1856,7 +1856,25 @@ a[aria-label=Next] {
 
 .form-name .form-control {
   height: 60px !important;
-  width: calc(50% - 20px) !important; }
+  width: calc(50% - 20px) !important;
+  font-family: 'Conv_bpg-arial-webfont'; }
+  .form-name .form-control option {
+    font-family: 'Conv_bpg-arial-webfont'; }
+
+.successful .successful_link {
+  margin-top: 20px; }
+  .successful .successful_link a {
+    background-color: #DA3429;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Conv_bpg-arial-webfont';
+    padding: 8px 45px; }
+    .successful .successful_link a img {
+      height: 18px; }
+    .successful .successful_link a span {
+      color: #fff;
+      margin-left: 5px; }
 
 @media only screen and (max-width: 992px) {
   header {

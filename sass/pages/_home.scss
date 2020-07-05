@@ -2634,5 +2634,36 @@ a[aria-label=Next] {
 	.form-control {
 		height:60px !important;
 		width: calc(50% - 20px) !important;
+		font-family: 'Conv_bpg-arial-webfont';
+
+		option {
+		font-family: 'Conv_bpg-arial-webfont';
+
+		}
+	}
+}
+
+.successful {
+
+	.successful_link {
+		margin-top: 20px;
+		a {
+			background-color: #DA3429;
+		color: #fff;
+		font-size: 16px;
+		display: inline-block;
+				font-family: 'Conv_bpg-arial-webfont';
+				padding: 8px 45px;
+
+
+				img {height: 18px;}
+
+				span {
+		color: #fff;
+		margin-left: 5px;
+
+				}
+		}
+		
 	}
 }
