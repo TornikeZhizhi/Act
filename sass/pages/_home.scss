@@ -1458,7 +1458,7 @@ textarea::placeholder {
     width: calc(50% - 16px);
 }
 .review.more-info-text {
-	max-width: 800px;
+	max-width: 770px;
 	margin: 0 auto;
 	ul {
 		padding-left: 15px;
@@ -2666,4 +2666,26 @@ a[aria-label=Next] {
 		}
 		
 	}
+}
+
+
+.consultant-img {
+
+	.team_book {
+
+		a {
+			color: #fff;
+			background-color: #DA3429;
+
+			img {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+}
+
+
+.consultant-section ~ .about_tabs_wrapper:after {
+
+	content: unset;
 }

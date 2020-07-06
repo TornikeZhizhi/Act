@@ -1086,7 +1086,7 @@ textarea::placeholder {
   width: calc(50% - 16px); }
 
 .review.more-info-text {
-  max-width: 800px;
+  max-width: 770px;
   margin: 0 auto; }
   .review.more-info-text ul {
     padding-left: 15px; }
@@ -1875,6 +1875,15 @@ a[aria-label=Next] {
     .successful .successful_link a span {
       color: #fff;
       margin-left: 5px; }
+
+.consultant-img .team_book a {
+  color: #fff;
+  background-color: #DA3429; }
+  .consultant-img .team_book a img {
+    filter: brightness(0) invert(1); }
+
+.consultant-section ~ .about_tabs_wrapper:after {
+  content: unset; }
 
 @media only screen and (max-width: 992px) {
   header {
