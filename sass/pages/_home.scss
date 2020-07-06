@@ -1855,7 +1855,7 @@ header {
 		a {
 			background-color: #fff;
 			font-family: 'Conv_bpg-arial-webfont';
-			padding: 14px 35px;
+			padding: 13px 35px;
 			border: 1px solid #DA3429;
 			transition: all .4s;
 			color: #DA3429;
@@ -2688,4 +2688,13 @@ a[aria-label=Next] {
 .consultant-section ~ .about_tabs_wrapper:after {
 
 	content: unset;
+}
+
+.blog_tabs {
+
+	ul {
+		li {
+			list-style-type: none;
+		}
+	}
 }
