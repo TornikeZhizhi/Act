@@ -265,19 +265,7 @@ $(".reviews_readmore").click(function(){
   $(this).toggleClass("show")
 
 
-  $(".reviews_readmore").each(function(index){
 
-    
-  })
-
-  if (textReview) {
-    $(".reviews_readmore span").text("დახურვა")
-    textReview = !textReview
-  }else {
-    $(".reviews_readmore span").text("მეტის ნახვა")
-    textReview = !textReview
-   
-  }
 
   
 })
