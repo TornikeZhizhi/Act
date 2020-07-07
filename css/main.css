@@ -1566,13 +1566,13 @@ a[aria-label=Next] {
   margin: 0 auto; }
   .news_inner_title h3 {
     color: #202020;
-    font-family: 32px; }
+    font-size: 32px; }
 
 .news_inner_date {
   display: flex;
   justify-content: center; }
   .news_inner_date span {
-    font-family: 16px;
+    font-size: 16px;
     color: #707070;
     position: relative; }
     .news_inner_date span:last-child:before {
@@ -1677,9 +1677,12 @@ a[aria-label=Next] {
   padding-bottom: 20px;
   margin-bottom: 30px; }
 
-.blog_box_img_wrapper a {
+.blog_box_img_wrapper {
   display: block;
   overflow: hidden; }
+  .blog_box_img_wrapper a {
+    display: block;
+    overflow: hidden; }
 
 .blog_box_wrapper {
   padding-left: 40px; }
@@ -1895,9 +1898,51 @@ a[aria-label=Next] {
 .blog_tabs ul li {
   list-style-type: none; }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%; } }
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%; } }
 @media only screen and (max-width: 992px) {
   header {
     padding: 15px 1px; }
+
+  .form-name .form-control {
+    width: 100% !important; }
+
+  .blogs_fluid {
+    padding-bottom: 0px; }
+
+  .news_inner_title h3 {
+    font-size: 21px; }
+
+  .news_inner_date span:last-child:before {
+    content: unset; }
+
+  .news_inner_date span:first-child:after {
+    content: unset; }
+
+  .news_inner_img {
+    height: 200px;
+    padding: 0 10px; }
+
+  .news_inner_text {
+    padding: 0 10px; }
+
+  .blogs_fluid .blog_container {
+    display: unset; }
+    .blogs_fluid .blog_container > div {
+      padding-left: 10px; }
+    .blogs_fluid .blog_container .blog_left_tabs {
+      margin-bottom: 20px; }
+
+  .blog_wrapper {
+    padding-bottom: 0;
+    margin-bottom: 30px; }
+
+  .blog_box_wrapper .blog_box_img {
+    height: 230px; }
 
   .team_book a {
     width: 100%; }
@@ -2088,6 +2133,50 @@ a[aria-label=Next] {
     background: unset;
     padding: 0px;
     height: 29px;
-    object-fit: contain; } }
+    object-fit: contain; }
+
+  .resource_inner_box {
+    display: unset; }
+
+  .resource_inner_box .resource_inner_img {
+    flex: 0 0 270px;
+    max-width: 375px;
+    height: 230px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0 10px; }
+
+  .resource_inner_main_info_fluid {
+    margin-left: 0px;
+    padding: 0 10px; }
+
+  .recourses_footer {
+    display: unset; }
+
+  .resource_inner_main_info_fluid .recourses_footer .recourses_link a {
+    display: block;
+    margin-top: 10px; }
+
+  .resource_bottom_text {
+    padding: 0 10px; } }
+@media only screen and (max-width: 776px) {
+  .training_box {
+    display: unset; }
+
+  .training_link a {
+    display: block; }
+
+  .training_link {
+    margin-top: 10px;
+    padding-right: 12px;
+    margin-bottom: 20px; }
+
+  .training_box .training_img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0 10px; }
+
+  .training_box .training_info {
+    padding-left: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

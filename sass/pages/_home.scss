@@ -2190,7 +2190,7 @@ a[aria-label=Next] {
 	h3 {
 
 		color: #202020;
-		font-family: 32px;
+		font-size: 32px;
 	}
 }
 
@@ -2199,7 +2199,7 @@ a[aria-label=Next] {
 	justify-content: center;
 	span {
 
-		font-family: 16px;
+		font-size: 16px;
 		color: #707070;
 		position: relative;
 
@@ -2365,6 +2365,9 @@ a[aria-label=Next] {
 }
 
 .blog_box_img_wrapper {
+
+		display: block;
+		overflow: hidden;
 	a {
 		display: block;
 		overflow: hidden;
@@ -2708,4 +2711,20 @@ a[aria-label=Next] {
 			list-style-type: none;
 		}
 	}
+}
+
+
+@media (min-width: 768px){
+
+.container {
+    max-width: 100%;
+}
+}
+
+
+@media (min-width: 576px){
+
+.container {
+    max-width: 100%;
+}
 }
