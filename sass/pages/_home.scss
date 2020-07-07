@@ -2363,6 +2363,13 @@ a[aria-label=Next] {
 	padding-bottom: 20px;
 	margin-bottom: 30px;
 }
+
+.blog_box_img_wrapper {
+	a {
+		display: block;
+		overflow: hidden;
+	}
+}
 .blog_box_wrapper {
 	padding-left: 40px;
 
@@ -2372,6 +2379,10 @@ a[aria-label=Next] {
 		width: 100%;
 		height: 60vh;
 		object-fit: cover;
+		transition: all .4s;
+		&:hover {
+			transform:scale(1.05);
+		}
 	}
 
 	.blog_date {
@@ -2450,7 +2461,7 @@ a[aria-label=Next] {
 	margin: 0 auto;
 }
 .fq_fluid {
-	min-height: 55vh;
+	min-height: 60vh;
 }
 
 .fq_box {

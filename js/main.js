@@ -195,8 +195,8 @@ window.onscroll = function () {
 
 
 
-var quantity = [Number($(".about_tabs_box").eq(0).find("span").text()),
-Number($(".about_tabs_box").eq(1).find("span").text())];
+var quantity = [Number($(".about_tabs_box").eq(0).find("span").attr("data-id")),
+Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
 
     var tabOffsetx = $(".about_tabs_fluid");
 
@@ -224,7 +224,7 @@ Number($(".about_tabs_box").eq(1).find("span").text())];
 
           var sc = $(window).scrollTop()
           console.log(sc)
-          if (sc > offset - windowHeight) {
+          if (sc > (offset + 200) - windowHeight) {
             $(".about_tabs_box").each(function(index){
               var x = 0;
               var k = setInterval(function(){
