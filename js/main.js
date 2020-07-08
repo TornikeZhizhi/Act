@@ -177,6 +177,10 @@ $(".dropdown").click(function(e){
 
 
 
+
+if ($(window).width() > 992) {
+  
+
 var $headerCont = $("header");
 // var $subHeader = $(".sub-header");
 var prevScrollpos = window.pageYOffset;
@@ -192,6 +196,7 @@ window.onscroll = function () {
 
   prevScrollpos = currentScrollPos;
 };
+}
 
 
 
