@@ -265,9 +265,11 @@ $(".reviews_readmore").click(function(){
   $(this).toggleClass("show")
 
 
+})
 
-
-  
+$('#menu-toggle').click(function(){
+  $(this).toggleClass('open');
+  $(".header_bottom").slideToggle()
 })
 
 
