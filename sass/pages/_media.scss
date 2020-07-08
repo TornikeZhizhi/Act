@@ -24,6 +24,7 @@
 
 .blogs_fluid {
     padding-bottom: 0px;
+    padding-right: 10px;
 }
 
 .news_inner_title h3 {
@@ -43,9 +44,16 @@
     content: unset;
 
 }
+body {
+    padding-top: 76px;
+}
 .header_nav {
     margin: 10px 0;
     width: 100%;
+}
+.common_wrapper .common_title {
+    text-align: center;
+    margin: 20px 0 14px;
 }
 .header_bottom {
     background: #f8f8f8;
