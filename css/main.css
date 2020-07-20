@@ -2310,9 +2310,6 @@ a[aria-label=Next] {
     margin-left: 0px;
     padding: 0 10px; }
 
-  .recourses_footer {
-    display: unset; }
-
   .resource_inner_main_info_fluid .recourses_footer .recourses_link a {
     display: block;
     margin-top: 10px; }
