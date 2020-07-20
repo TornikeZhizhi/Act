@@ -14,8 +14,24 @@
 
 @media only screen and (max-width: 992px) {
 
+    .dropdown {
+
+     
+
+            li {
+                margin-bottom: 6px;
+            }
+    
+    }
+
 .header_nav ul li:not(:last-child) {
     margin-right: 0;
+}
+.whitesails_main_right .build_hover_link {
+    position: absolute;
+    top: 21%;
+    right: 1%;
+    z-index: 1000;
 }
 
 .form-name .form-control {
