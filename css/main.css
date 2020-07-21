@@ -1217,7 +1217,8 @@ textarea.form-control {
     background: #fff; }
   .dropdown li {
     width: 100%;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    padding-bottom: 5px; }
     .dropdown li:not(:last-child) {
       border-bottom: 1px solid #c9c9c98f; }
     .dropdown li a {
