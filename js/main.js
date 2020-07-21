@@ -165,12 +165,15 @@ $(document).on('input',"#email", function(e){
 
 $(document).on("click",function(){
    $(".dropdown").slideUp()
+   $(".nav_dropdown").removeClass("active")
 })
-$(".nav_dropdown>a").click(function(e){
+$(".nav_dropdown").click(function(e){
   e.preventDefault()
   e.stopPropagation()
+  $(this).toggleClass("active")
     $(".dropdown").slideToggle()
 })
+
 $(".dropdown").click(function(e){
   e.stopPropagation()
 })
