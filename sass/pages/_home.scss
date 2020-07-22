@@ -1379,10 +1379,16 @@ span {
 .review {
     margin-bottom: 40px;
     border-bottom: 1px solid #E5E5E5;
+
+    div  {
+    	span {
+    		font-size: 14px;
+    	}
+    }
 }
 
 .review p {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Conv_bpg-arial-webfont';
     padding: 10px 0 15px;
     margin-bottom: 0px;
@@ -2170,6 +2176,13 @@ a[aria-label=Next] {
 			font-size: 18px;
 			color: #202020;
 			transition: all .4s;
+			    display: -webkit-box;
+	    height: 41px;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    -webkit-line-clamp: 2;
 			}
 		}
 	}
@@ -2229,7 +2242,7 @@ a[aria-label=Next] {
 
 .news_inner_fluid {
 
-	max-width: 970px;
+	max-width: 800px;
 	margin: 45px auto;
 }
 
@@ -2343,8 +2356,9 @@ a[aria-label=Next] {
 	.blog_container {
 
 		display: flex;
-		max-width: 1170px;
+		max-width: 1070px;
 		margin: 0 auto;
+		margin-left: 7%;
 
 		.blog_left_tabs {
 
@@ -2881,4 +2895,16 @@ a[aria-label=Next] {
       }
     }    
   }
+}
+
+
+.review-section div h2 {
+	background-color: #F2F2F2;
+	transition: all .4s;
+	padding: 12px 30px;
+
+	&:hover {
+		background:#DA3429;
+		color: #fff;
+	}
 }
