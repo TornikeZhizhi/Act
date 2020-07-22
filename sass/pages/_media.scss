@@ -18,6 +18,11 @@
 
 @media only screen and (max-width: 992px) {
 
+    .about_tabs_fluid div {
+    max-width: 85%;
+    flex: 0 0 85%;
+}
+
     .nav_dropdown.active:after {
     top: -3px;
     right: -4px;

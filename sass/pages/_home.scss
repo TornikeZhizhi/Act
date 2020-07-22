@@ -1392,8 +1392,15 @@ span {
     font-family: 'Conv_bpg-arial-webfont';
     padding: 10px 0 15px;
     margin-bottom: 0px;
+
+   
 }
 
+
+.more-info-text p {
+    font-size: 14px;
+
+}
 .review-section {
     width: 100%;
     margin: 50px auto 50px;
@@ -1751,32 +1758,31 @@ header {
 
 	div {
 	border: 1px solid #C9C9C9;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
+			
 			max-width: 45%;
 			flex: 0 0 45%;
 			padding: 15px 10px;
 			text-align: center;
-		&:first-child{
-			margin-right:50px;
-		}
+		
 
 		img {
-			height: 30px;
+			height: 45px;
 			object-fit: contain;
 		}
 
 		p {
 			margin-bottom: 0;
 			font-size: 14px;
+			margin-top: 10px;
 		}
 
 		span {
 			color: #DA3429;
 			font-size: 42px;
 			font-weight: bold;
+			transform: translateY(8px);
+    		display: inline-block;
+    		margin-left: 10px;
 		}
 	}
 }

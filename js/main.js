@@ -203,9 +203,8 @@ window.onscroll = function () {
 
 
 
-var quantity = [Number($(".about_tabs_box").eq(0).find("span").attr("data-id")),
-Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
-
+var quantity = [Number($(".about_tabs_box").eq(0).find("span").attr("data-id"))];
+    console.log(quantity)
     var tabOffsetx = $(".about_tabs_fluid");
 
     if(tabOffsetx.length){
