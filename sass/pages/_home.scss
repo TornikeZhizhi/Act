@@ -2925,3 +2925,13 @@ a[aria-label=Next] {
 		color: #fff;
 	}
 }
+
+.news_inner_text {
+
+	p {
+		img {
+			float: left;
+			padding-right: 10px;
+		}
+	}
+}

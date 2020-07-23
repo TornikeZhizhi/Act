@@ -2031,6 +2031,10 @@ a[aria-label=Next] {
     background: #DA3429;
     color: #fff; }
 
+.news_inner_text p img {
+  float: left;
+  padding-right: 10px; }
+
 @media only screen and (min-width: 992px) {
   .header_contact {
     padding-left: 40px; }
