@@ -220,7 +220,6 @@ footer>div:first-child {
 			    white-space: nowrap;
 			    transition: all .4s;
 			    word-spacing: 6px;
-			    font-family: 'Conv_bpg-arial-webfont';
 			    &:hover{
 			    	opacity:1;
 			    }
@@ -230,6 +229,14 @@ footer>div:first-child {
 				opacity: 1;
 			}
 		}	
+	}
+}
+
+.dropdown {
+
+	a {
+			    font-family: 'Conv_bpg-arial-webfont';
+
 	}
 }
 
@@ -1397,8 +1404,12 @@ span {
 }
 
 
-.more-info-text p {
-    font-size: 14px;
+.more-info-text {
+
+	* {
+
+    font-size: 16px !important;
+	}
 
 }
 .review-section {

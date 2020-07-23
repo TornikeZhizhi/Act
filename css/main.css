@@ -201,12 +201,14 @@ footer > div:first-child {
       font-size: 16px;
       white-space: nowrap;
       transition: all .4s;
-      word-spacing: 6px;
-      font-family: 'Conv_bpg-arial-webfont'; }
+      word-spacing: 6px; }
       .header_nav ul a:hover {
         opacity: 1; }
       .header_nav ul a.active {
         opacity: 1; }
+
+.dropdown a {
+  font-family: 'Conv_bpg-arial-webfont'; }
 
 .header_socials {
   margin-left: 30px;
@@ -1031,8 +1033,8 @@ span {
   padding: 10px 0 15px;
   margin-bottom: 0px; }
 
-.more-info-text p {
-  font-size: 14px; }
+.more-info-text * {
+  font-size: 16px !important; }
 
 .review-section {
   width: 100%;
