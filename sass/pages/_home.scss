@@ -2935,3 +2935,30 @@ a[aria-label=Next] {
 		}
 	}
 }
+
+
+.training_footer_wraper {
+	display: flex;
+	margin-top: 24px;
+
+	.training_price {
+			line-height: 27px;
+		span {
+			display: block;
+		}
+
+		.tr-price {
+			font-weight: bold;
+			font-size: 32px;
+		}
+	}
+
+	.training_link {
+		margin-left: 50px;
+		margin-top: 0;
+
+		a {
+			    display: inline-block;
+		}
+	}
+}

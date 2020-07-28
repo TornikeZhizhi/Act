@@ -2035,6 +2035,22 @@ a[aria-label=Next] {
   float: left;
   padding-right: 10px; }
 
+.training_footer_wraper {
+  display: flex;
+  margin-top: 24px; }
+  .training_footer_wraper .training_price {
+    line-height: 27px; }
+    .training_footer_wraper .training_price span {
+      display: block; }
+    .training_footer_wraper .training_price .tr-price {
+      font-weight: bold;
+      font-size: 32px; }
+  .training_footer_wraper .training_link {
+    margin-left: 50px;
+    margin-top: 0; }
+    .training_footer_wraper .training_link a {
+      display: inline-block; }
+
 @media only screen and (min-width: 992px) {
   .header_contact {
     padding-left: 40px; }
@@ -2045,6 +2061,19 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .recourses_footer {
+    display: unset; }
+
+  .training_footer_wraper {
+    display: unset;
+    margin: 0; }
+    .training_footer_wraper .training_link {
+      margin-bottom: 50px; }
+
+  .training_footer_wraper .training_link {
+    margin-left: 0px;
+    margin-top: 12px; }
+
   .about_tabs_fluid div {
     max-width: 85%;
     flex: 0 0 85%; }

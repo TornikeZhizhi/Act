@@ -17,6 +17,21 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .recourses_footer {
+        display: unset;
+    }
+    .training_footer_wraper {
+        display: unset;
+        margin: 0;
+
+        .training_link {
+            margin-bottom: 50px;
+        }
+    }
+    .training_footer_wraper .training_link {
+     margin-left: 0px;
+    margin-top: 12px;
+}
 
     .about_tabs_fluid div {
     max-width: 85%;
