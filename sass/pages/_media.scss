@@ -19,6 +19,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+    .team_fluid_bg {
+        display: none;
+    }
     .recourses_footer {
         display: unset;
     }

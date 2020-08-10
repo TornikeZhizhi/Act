@@ -2097,6 +2097,9 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .team_fluid_bg {
+    display: none; }
+
   .recourses_footer {
     display: unset; }
 
