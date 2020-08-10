@@ -2,6 +2,8 @@
 
 @media only screen and (min-width: 992px) {
 
+   
+
     .header_contact {
         padding-left: 100px;
     }
@@ -33,9 +35,16 @@
     margin-top: 12px;
 }
 
+ .about_tabs_fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about_tabs_fluid div {
     max-width: 85%;
     flex: 0 0 85%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
     .nav_dropdown.active:after {
