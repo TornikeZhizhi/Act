@@ -175,10 +175,10 @@ footer>div:first-child {
 	margin:10px;
 	margin-left: 0;
 
-	span {
+	a {
 		background-color: #F3F3F3;
 		padding: 5px 10px;
-
+color: #212529;
     margin-bottom: 9px;
     display: inline-flex;
     margin-right: 10px;
@@ -1306,7 +1306,7 @@ p {
 
     &:after{
 	   	position: absolute;
-	    top: 25px;
+	    top: calc(100% + 3px);
 	    right: 0;
 	    content: "";
 	    width: 0%;

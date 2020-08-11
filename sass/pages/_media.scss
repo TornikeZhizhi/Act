@@ -20,6 +20,11 @@
 
 @media only screen and (max-width: 992px) {
 
+
+    .position_bold:after {
+        width: 100%;
+    }
+
     .team_fluid_bg {
         display: none;
     }
