@@ -179,7 +179,9 @@ $(".dropdown").click(function(e){
 })
 
 
-
+$(".dropdown-menu").click(function (e) {
+  e.stopPropagation()
+})
 
 if ($(window).width() > 992) {
   
