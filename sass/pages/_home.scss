@@ -1870,14 +1870,27 @@ header {
 		.form_header_wrapper {
 			display: flex;
 			width: calc(100% - 70px);
+			  
 
 			&>div {
-				flex: 0 0 33%;
-				max-width: 33%;
+				    flex: 0 0 33.3333%;
+    max-width: 33.33333%;;
 			}
 		}
 		.search_button {
 			width: 70px;
+			button {
+
+			transition: all .3s;
+			}
+
+			&:hover{
+
+				button {
+				background:#DA3429;
+
+				}
+			}
 		}
 		form {
 			width: 100%;
@@ -1897,7 +1910,7 @@ header {
 		div {
 			
 			text-align: center;
-			padding: 0px 5px;
+		
 			span {
 				font-size: 16px;
 				color: #202020;
@@ -2093,6 +2106,8 @@ header {
 
 .resourses_fluid {
 	padding-bottom: 40px;
+	max-width: 1040px;
+	margin: 0 auto;
 }
 
 /*.page-link {
@@ -3072,8 +3087,8 @@ a[aria-label=Next] {
 	.dropdown-menu {
 		    border-radius: 0;
     border-top: unset;
-    left: -6px !important;
-    top: calc(100% + -49px) !important;
+        left: -1px !important;
+    top: calc(100% + -40px) !important;
     width: calc(100% + 2px);
         padding: 15px 23px 5px !important;
 	}
