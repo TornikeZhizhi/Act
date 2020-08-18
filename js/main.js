@@ -225,15 +225,15 @@ Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
               x = quantity[index]
             }
             $(".about_tabs_box span").eq(index).text(x)
-            x+=2;
-          },1/100);
+            x+=1;
+          },50);
           })
       }else {
 
           $(window).on("scroll",function(){
 
           var sc = $(window).scrollTop()
-          console.log(sc)
+     
           if (sc > (offset + 200) - windowHeight) {
             $(".about_tabs_box").each(function(index){
               var x = 0;
@@ -243,8 +243,8 @@ Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
                 x = quantity[index]
               }
               $(".about_tabs_box span").eq(index).text(x)
-              x+=2;
-            },1/100);
+              x+=1;
+            },50);
             })
 
             $(window).off("scroll");
