@@ -19,6 +19,9 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .about_tabs_fluid div:first-child {
+        margin-right: 0;
+    }
 .new_resources_box {
     display: block;
 }

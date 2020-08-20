@@ -82,6 +82,7 @@ if ($("#myInput1").length > 0) {
 $(".review-section h2").on("click",function(){
 
   $(this).parent().next().slideToggle()
+  $(this).parent().toggleClass("active")
 })
  
 
