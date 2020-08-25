@@ -2321,6 +2321,70 @@ a[aria-label=Next] {
 .resoursec_filter .team_filter {
   max-width: 770px; }
 
+.pincode_button_box {
+  border: 1px solid #DA3429;
+  margin-top: 29px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: calc(100% - 20px); }
+  .pincode_button_box a {
+    font-size: 16px;
+    font-family: 'Conv_bpg-arial-webfont';
+    color: #fff;
+    width: 100%;
+    background-color: #DA3429;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+
+.verification_button_box {
+  width: calc(100% - 20px);
+  border: 1px solid #DA3429;
+  margin-top: 29px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .verification_button_box .verification_button {
+    font-size: 16px;
+    font-family: 'Conv_bpg-arial-webfont';
+    color: #DA3429;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  .verification_button_box .re_send {
+    position: absolute;
+    pointer-events: unset !important;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #DA3429;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: none; }
+    .verification_button_box .re_send i {
+      color: #fff;
+      font-size: 27px;
+      transform: rotate(-29deg); }
+  .verification_button_box.active {
+    border-color: #ced4da; }
+    .verification_button_box.active .verification_button {
+      background-color: #ced4da;
+      pointer-events: none;
+      color: #202020; }
+    .verification_button_box.active .re_send {
+      display: flex; }
+
 @media only screen and (min-width: 992px) {
   .header_contact {
     padding-left: 100px; }
@@ -2331,6 +2395,10 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .verification_button_box, .pincode_button_box {
+    margin-top: 0;
+    margin-bottom: 10px; }
+
   .about_tabs_fluid div:first-child {
     margin-right: 0; }
 

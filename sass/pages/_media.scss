@@ -19,6 +19,12 @@
 }
 
 @media only screen and (max-width: 992px) {
+
+    .verification_button_box, .pincode_button_box {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .about_tabs_fluid div:first-child {
         margin-right: 0;
     }
