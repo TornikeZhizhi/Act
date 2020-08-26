@@ -556,7 +556,7 @@ footer > div:first-child {
   max-width: 1170px;
   margin: 0 auto; }
 
-.error {
+.error_fluid {
   min-height: calc(100vh - 171px); }
 
 .error-img {
