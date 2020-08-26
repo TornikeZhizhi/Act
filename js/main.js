@@ -283,4 +283,32 @@ $('#menu-toggle').click(function(){
   $(".header_bottom").slideToggle()
 })
 
+$(function () {
+  let show = 'show';
+  
+  $('.field input').on('checkval', function () {
+    let label = $(this).next('label');
+    if(this.value !== '') {
+      label.addClass(show);
+    } else {
+      label.removeClass(show);
+    }
+  }).on('keyup', function () {
+    $(this).trigger('checkval');
+  }); 
+});
+
+
+$(".pass_recover").click(function () {
+
+    $(".authorization_modal").hide()
+    $(".recovery_modal").fadeIn(200)
+ 
+})
+
+$(".auth_link").click(function () {
+
+    $(".authorization_modal").fadeIn(200)
+    $(".recovery_modal").hide()
+})
 

@@ -16,6 +16,83 @@
 </head>
 <body>
 
+<div class="modal fade common_modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+  <!-- Authorizathion recover modal-content -->
+    <div class="modal-content authorization_modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ავტორიზაცია</h5>
+      </div>
+      <div class="modal-body">
+      	<form class="authorization_form">
+		     	  <div class="field">
+				      <input type="email" id="email-field" name="email-field" required=""> 
+				      <label for="email-field">ელ-ფოსტა</label>
+		   		 </div>
+
+		   		 <div class="field">
+				      <input type="password" id="password-field" name="password-field" required="">
+				      <label for="password-field">პაროლი</label>
+		   		 </div>
+
+		   		 <div class="custom-control custom-checkbox">
+		    	  <input type="checkbox" name="remember" class="custom-control-input" id="remember_checkbox">
+		     		 <label class="custom-control-label" for="remember_checkbox">დამახსოვრება</label>
+		   		 </div>
+
+		   		 <div class="common_modal_button">
+		   		 	<button>შესვლა</button>
+
+		   		 	<div class="modal_error_message">
+		   		 		<span>პაროლი არასწორია</span>
+		   		 	</div>
+		   		 </div>
+
+
+		   		 <div class="pass_recover">
+		   		 		<span>პაროლის აღდგენა</span>
+		   		 </div>  
+     	 	</form>
+	    </div>
+	  </div>
+	  <!-- Pass recover modal-content -->
+	 <div class="modal-content recovery_modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">პაროლის აღდგენა</h5>
+      </div>
+      <div class="modal-body">
+      	<form class="authorization_form">
+		     	  <div class="field">
+				      <input type="email" id="email-field" name="email-field" required=""> 
+				      <label for="email-field">ელ-ფოსტა</label>
+		   		 </div>
+
+
+		   		 <div class="common_modal_button">
+		   		 	<button>პაროლის აღდგენა</button>
+		   		 </div>
+
+		   		 <div class="pass_recover_info">
+		   		 	<span>პაროლის აღსადგენი ბმული 
+						გამოგეგზავნებათ ელფოსტაზე</span>
+		   		 </div>
+
+
+		   		 <div class="auth_link">
+		   		 		<span>ავტორიზაცია</span>
+		   		 </div>  
+     	 	</form>
+	    </div>
+	  </div>
+
+
+	</div>
+</div>
+
+
+
+
 <header>
 	
 	<div class="header_top">
@@ -212,13 +289,13 @@
 
 	
 
-	<!-- <div class="authorization">
-		<a href="">
+	<div class="authorization">
+		<a href="" data-toggle="modal" data-target="#exampleModal">
 			<i class="fa fa-user" aria-hidden="true"></i>
 			<span>ავტორიზაცია</span>
 		</a>
 		
-	</div> -->
+	</div>
 	</div>
 
 	
