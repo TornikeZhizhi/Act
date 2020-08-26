@@ -172,7 +172,7 @@ $(".nav_dropdown").click(function(e){
   e.preventDefault()
   e.stopPropagation()
   $(this).toggleClass("active")
-    $(".dropdown").slideToggle()
+   $(this).find(".dropdown").slideToggle()
 })
 
 $(".dropdown").click(function(e){
@@ -312,3 +312,15 @@ $(".auth_link").click(function () {
     $(".recovery_modal").hide()
 })
 
+
+$(".modal_close").click(function(){
+
+
+$("#exampleModal").modal('hide');
+
+})
+
+$('#exampleModal').on('hidden.bs.modal', function () {
+  $(".authorization_modal").fadeIn(200)
+    $(".recovery_modal").hide()
+})
