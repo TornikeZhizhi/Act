@@ -3347,7 +3347,7 @@ flex-grow: 1;
     position: relative;
     width: calc(100% - 20px);
 
-    a {
+    .pincode_button {
     	 font-size: 16px;
     	   font-family: 'Conv_bpg-arial-webfont';
     	   color: #fff;
@@ -3358,16 +3358,18 @@ flex-grow: 1;
     justify-content: center;
     align-items: center;
     display: flex;
+    cursor: pointer;
     }
 }
 .verification_button_box {
-	width: calc(100% - 20px);
+	width: calc(100% - 15px);
 	border: 1px solid #DA3429;
     margin-top: 29px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     position: relative;
 
     .verification_button {
@@ -3379,6 +3381,7 @@ flex-grow: 1;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     display: flex;
     }
 
@@ -3396,6 +3399,7 @@ flex-grow: 1;
     	align-items: center;
     	justify-content: center;
     	display: none;
+    	cursor: pointer;
 
     	i {
     	    color: #fff;
@@ -3416,4 +3420,18 @@ flex-grow: 1;
     		display: flex;
     	}
     }
+}
+
+.phin_code_wrapper, #_Elliot_ContentManagement_Book_Phone_Pin_Code_Input {
+
+	width: 100%;
+	padding-left: 10px;
+
+	.form-group  {
+		padding-left: 0;
+		padding-right: 0;
+		input {
+			width: calc(100% - 24px);
+		}
+	}
 }

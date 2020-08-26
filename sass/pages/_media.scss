@@ -20,6 +20,12 @@
 
 @media only screen and (max-width: 992px) {
 
+    .phin_code_wrapper  {
+        .form-group {
+            padding-left: 0;
+        }
+    }
+
     .verification_button_box, .pincode_button_box {
         margin-top: 0;
         margin-bottom: 10px;

@@ -2330,7 +2330,7 @@ a[aria-label=Next] {
   justify-content: center;
   position: relative;
   width: calc(100% - 20px); }
-  .pincode_button_box a {
+  .pincode_button_box .pincode_button {
     font-size: 16px;
     font-family: 'Conv_bpg-arial-webfont';
     color: #fff;
@@ -2340,16 +2340,18 @@ a[aria-label=Next] {
     text-align: center;
     justify-content: center;
     align-items: center;
-    display: flex; }
+    display: flex;
+    cursor: pointer; }
 
 .verification_button_box {
-  width: calc(100% - 20px);
+  width: calc(100% - 15px);
   border: 1px solid #DA3429;
   margin-top: 29px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   position: relative; }
   .verification_button_box .verification_button {
     font-size: 16px;
@@ -2360,6 +2362,7 @@ a[aria-label=Next] {
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     display: flex; }
   .verification_button_box .re_send {
     position: absolute;
@@ -2371,7 +2374,8 @@ a[aria-label=Next] {
     width: 50px;
     align-items: center;
     justify-content: center;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .verification_button_box .re_send i {
       color: #fff;
       font-size: 27px;
@@ -2385,6 +2389,15 @@ a[aria-label=Next] {
     .verification_button_box.active .re_send {
       display: flex; }
 
+.phin_code_wrapper, #_Elliot_ContentManagement_Book_Phone_Pin_Code_Input {
+  width: 100%;
+  padding-left: 10px; }
+  .phin_code_wrapper .form-group, #_Elliot_ContentManagement_Book_Phone_Pin_Code_Input .form-group {
+    padding-left: 0;
+    padding-right: 0; }
+    .phin_code_wrapper .form-group input, #_Elliot_ContentManagement_Book_Phone_Pin_Code_Input .form-group input {
+      width: calc(100% - 24px); }
+
 @media only screen and (min-width: 992px) {
   .header_contact {
     padding-left: 100px; }
@@ -2395,6 +2408,9 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .phin_code_wrapper .form-group {
+    padding-left: 0; }
+
   .verification_button_box, .pincode_button_box {
     margin-top: 0;
     margin-bottom: 10px; }
