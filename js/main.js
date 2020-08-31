@@ -324,3 +324,56 @@ $('#exampleModal').on('hidden.bs.modal', function () {
   $(".authorization_modal").fadeIn(200)
     $(".recovery_modal").hide()
 })
+
+
+$(".new_pass_box .default").click(function(){
+
+  $(this).hide()
+  $(this).next().show()
+  $(this).prev().attr("type","text");
+
+})
+
+$(".new_pass_box .slashed").click(function(){
+
+  $(this).hide()
+  $(this).prev().show()
+  $(this).prev().prev().attr("type","password");
+})
+
+
+
+$(".mail_editing").click(function(){
+
+
+  $(".private_information_container").hide()
+  $("#mail_change_wrapper").show()
+
+  $(".profile_title").hide()
+  $(".mail_title").show()
+})
+
+
+$(".password_editing").click(function(){
+
+
+  $(".private_information_container").hide()
+  $("#password_change_wrapper").show()
+
+    $(".profile_title").hide()
+  $(".password_title").show()
+})
+
+
+$(".company_edit").click(function(){
+
+  $(".time_info").hide()
+  $(".time_editing_row").addClass("show")
+
+  $(this).hide()
+  $(this).next().show()
+})
+
+
+//profile js
+

@@ -25,6 +25,116 @@
 }
 
 @media only screen and (max-width: 992px) {
+.company_edit_info_wrapper {
+    
+    padding: 20px 0 10px;
+   
+}
+
+.private_information .mail_info div {
+    padding: 10px 5px;
+     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.private_information .password_info div {
+    flex-direction: column;
+        padding: 10px 5px;
+}
+.profile_title  {
+    margin-bottom: 15px;
+
+    h3 {
+        font-size: 20px;
+    }
+}
+.private_information span {
+    width: 100%;
+    display: block;
+
+    &:first-child {
+        margin-bottom:10px;
+    }
+}
+
+    .common_modal .modal-title {
+    font-size: 18px;
+        margin-right: 74px;
+}
+    .profile_body .book_center_info .company_name {
+    margin: 8px 0 13px;
+}
+
+    .profile_body .book_date_time {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .book_link_wrapper {
+        flex-direction: unset;
+        justify-content: space-around;
+       
+    }
+    .profile_body .book_info_box {
+        display: block;
+    }
+
+
+    .authorization {
+        display: inline-block;
+    }
+
+    .profile_fluid {
+    padding: 25px 0;
+    min-height: 75vh;
+}
+.profile_fluid .profile_nav {
+        flex: 0 0 370px;
+    max-width: 370px;
+    ul {
+        padding-right: 15px;
+    }
+}
+.profile_fluid .profile_nav ul li {
+    margin-bottom: 10px;
+}
+.company_edit_info_wrapper .successful_link {
+    background-color: #DA3429;
+    margin: 15px 2px 5px;
+    display: inline-block;
+    padding: 10px 15px;
+    width: 95%;
+}
+.company_info_inner_fluid .company_info_header .company_edit_box {
+    position: unset;
+
+    
+}
+.profile_edit_comment_box button {
+    padding: 15px 37px;
+}
+.profile_body {
+    margin-left: 0px;
+    padding: 0 10px;
+}
+
+.profile_wrapper {
+    display: block;
+}
+.profile_fluid .profile_nav {
+    position: unset;
+}
+
+.company_edit_info_wrapper {
+
+    .costumer_info {
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
     .common_modal .modal-title {
         font-size: 24px;
     }

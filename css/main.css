@@ -2554,6 +2554,279 @@ a[aria-label=Next] {
         font-size: 27px;
         color: #686868; }
 
+.profile_wrapper {
+  display: flex; }
+
+.profile_fluid {
+  padding: 50px 0;
+  min-height: 75vh; }
+  .profile_fluid .profile_container {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .profile_fluid .profile_nav {
+    flex: 0 0 270px;
+    max-width: 270px;
+    width: 100%;
+    position: sticky;
+    align-self: flex-start;
+    left: 0;
+    top: 140px; }
+    .profile_fluid .profile_nav ul {
+      width: 100%; }
+      .profile_fluid .profile_nav ul li {
+        border: 1px solid #E5E5E5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Conv_bpg-arial-webfont';
+        font-size: 16px;
+        color: #202020;
+        margin-bottom: 15px;
+        cursor: pointer; }
+        .profile_fluid .profile_nav ul li a {
+          color: #202020;
+          font-family: 'Conv_bpg-arial-webfont';
+          width: 100%;
+          height: 100%;
+          padding: 15px 10px;
+          text-align: center; }
+        .profile_fluid .profile_nav ul li i {
+          margin-right: 6px; }
+        .profile_fluid .profile_nav ul li.active {
+          color: #fff;
+          border-color: #DA3429; }
+          .profile_fluid .profile_nav ul li.active a {
+            background-color: #DA3429;
+            color: #fff; }
+
+.profile_body {
+  margin-left: 20px;
+  width: 100%; }
+  .profile_body .book_info_box {
+    display: flex; }
+    .profile_body .book_info_box:not(:last-child) {
+      border-bottom: 1px solid #E5E5E5;
+      margin-bottom: 20px; }
+  .profile_body .book_date_time {
+    border: 1px solid #2C9D33;
+    flex: 0 0 170px;
+    max-width: 170px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .profile_body .book_date_time .book_status {
+      color: #2C9D33; }
+    .profile_body .book_date_time.end_book {
+      border-color: #DA3429; }
+      .profile_body .book_date_time.end_book .book_status {
+        color: #DA3429; }
+    .profile_body .book_date_time span {
+      color: #202020;
+      font-size: 18px;
+      font-family: 'Conv_bpg-arial-webfont'; }
+      .profile_body .book_date_time span:not(:last-child) {
+        margin-bottom: 3px; }
+  .profile_body .book_center_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    padding: 3px 0; }
+    .profile_body .book_center_info span {
+      font-family: 'Conv_bpg-arial-webfont';
+      color: #202020;
+      font-size: 16px;
+      white-space: nowrap; }
+    .profile_body .book_center_info .company_name {
+      display: flex;
+      flex-direction: column; }
+    .profile_body .book_center_info .code_box .book_id {
+      background-color: #F5F5F5;
+      padding: 3px 8px;
+      margin-right: 10px; }
+
+.book_link_wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+  .book_link_wrapper span {
+    font-family: 'Conv_bpg-arial-webfont';
+    color: #202020;
+    font-size: 16px; }
+  .book_link_wrapper .book_link {
+    border: 1px solid #DA3429;
+    color: #DA3429;
+    cursor: pointer;
+    font-family: 'Conv_bpg-arial-webfont';
+    padding: 10px 40px;
+    margin-top: 10px;
+    transition: all .3s; }
+    .book_link_wrapper .book_link:hover {
+      background: #DA3429;
+      color: #fff; }
+
+.book_info_box:not(:last-child) {
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
+
+.book_info_container {
+  margin-bottom: 50px; }
+
+#private_info_section {
+  display: none; }
+
+.private_information .title {
+  color: #202020; }
+.private_information .mail_info {
+  border-bottom: 1px solid #E5E5E5; }
+  .private_information .mail_info div {
+    padding: 10px 15px;
+    background-color: #FBFBFB;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between; }
+.private_information .password_info div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px; }
+.private_information span {
+  color: #202020;
+  font-family: 'Conv_bpg-arial-webfont'; }
+.private_information .mail_editing, .private_information .password_editing {
+  cursor: pointer; }
+
+.profile_title {
+  margin-bottom: 30px; }
+
+.company_info_inner_fluid .company_info_header .company_edit, .company_info_inner_fluid .company_info_header .company_edit_box a, .profile_edit_comment_box label, .profile_edit_comment_box textarea, .recovery_header_info span, .common_recovery_box form label, .common_recovery_box form input {
+  color: #202020;
+  font-family: 'Conv_bpg-arial-webfont'; }
+
+.company_info_inner_fluid .company_info_inner_container {
+  border: 1px solid #E5E5E5;
+  margin-bottom: 30px; }
+.company_info_inner_fluid .company_info_header {
+  background-color: #FCFCFC;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #E5E5E5; }
+  .company_info_inner_fluid .company_info_header .company_edit {
+    cursor: pointer; }
+  .company_info_inner_fluid .company_info_header .company_title {
+    padding: 10px 0; }
+    .company_info_inner_fluid .company_info_header .company_title h4 {
+      color: #202020;
+      font-size: 16px; }
+  .company_info_inner_fluid .company_info_header .company_edit_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #EFEFEF;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .company_info_inner_fluid .company_info_header .company_edit_box a {
+      cursor: pointer;
+      display: none; }
+
+.company_edit_info_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 50px;
+  align-items: center; }
+  .company_edit_info_wrapper .costumer_info {
+    margin-bottom: 10px; }
+  .company_edit_info_wrapper .successful_link {
+    background-color: #DA3429;
+    margin: 15px 0 5px;
+    display: inline-block;
+    padding: 8px 45px; }
+    .company_edit_info_wrapper .successful_link a {
+      font-family: 'Conv_bpg-arial-webfont';
+      font-size: 16px;
+      color: #fff; }
+      .company_edit_info_wrapper .successful_link a img {
+        height: 18px; }
+
+.profile_edit_comment_box label {
+  font-size: 16px;
+  margin-bottom: 0; }
+.profile_edit_comment_box textarea {
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  height: 185px;
+  resize: none;
+  margin: 5px 0; }
+.profile_edit_comment_box button {
+  color: #DA3429;
+  border: 1px solid #DA3429;
+  padding: 15px 72px;
+  max-width: 370px;
+  margin: 7px auto;
+  display: block;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer; }
+  .profile_edit_comment_box button:hover {
+    background: #DA3429;
+    color: #FFF; }
+
+.recovery_header_info {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 5px 5px 15px 15px; }
+
+.common_recovery_box form {
+  max-width: 400px;
+  width: 100%;
+  margin: 35px auto 0; }
+  .common_recovery_box form label, .common_recovery_box form input {
+    display: block; }
+  .common_recovery_box form input {
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    padding: 10px 10px; }
+  .common_recovery_box form button {
+    margin-top: 20px;
+    background-color: #DA3429;
+    color: #fff;
+    width: 100%;
+    padding: 15px 15px;
+    cursor: pointer; }
+
+#password_change_wrapper form {
+  margin: 0 auto; }
+
+.new_pass_box, .confirm_new_pass_box {
+  position: relative; }
+  .new_pass_box i, .confirm_new_pass_box i {
+    position: absolute;
+    bottom: 16px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer; }
+  .new_pass_box .slashed, .confirm_new_pass_box .slashed {
+    display: none; }
+
+#mail_change_wrapper, #password_change_wrapper, .mail_title, .password_title {
+  display: none; }
+
+.time_editing_row {
+  max-width: 650px;
+  width: 100%; }
+
+.time_editing_row {
+  display: none; }
+  .time_editing_row.show {
+    display: flex; }
+
 @media only screen and (min-width: 1100px) {
   .header_nav {
     margin: 0 2% 0% 2%; } }
@@ -2567,6 +2840,90 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .company_edit_info_wrapper {
+    padding: 20px 0 10px; }
+
+  .private_information .mail_info div {
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+
+  .private_information .password_info div {
+    flex-direction: column;
+    padding: 10px 5px; }
+
+  .profile_title {
+    margin-bottom: 15px; }
+    .profile_title h3 {
+      font-size: 20px; }
+
+  .private_information span {
+    width: 100%;
+    display: block; }
+    .private_information span:first-child {
+      margin-bottom: 10px; }
+
+  .common_modal .modal-title {
+    font-size: 18px;
+    margin-right: 74px; }
+
+  .profile_body .book_center_info .company_name {
+    margin: 8px 0 13px; }
+
+  .profile_body .book_date_time {
+    margin-right: 0;
+    margin: 0 auto; }
+
+  .book_link_wrapper {
+    flex-direction: unset;
+    justify-content: space-around; }
+
+  .profile_body .book_info_box {
+    display: block; }
+
+  .authorization {
+    display: inline-block; }
+
+  .profile_fluid {
+    padding: 25px 0;
+    min-height: 75vh; }
+
+  .profile_fluid .profile_nav {
+    flex: 0 0 370px;
+    max-width: 370px; }
+    .profile_fluid .profile_nav ul {
+      padding-right: 15px; }
+
+  .profile_fluid .profile_nav ul li {
+    margin-bottom: 10px; }
+
+  .company_edit_info_wrapper .successful_link {
+    background-color: #DA3429;
+    margin: 15px 2px 5px;
+    display: inline-block;
+    padding: 10px 15px;
+    width: 95%; }
+
+  .company_info_inner_fluid .company_info_header .company_edit_box {
+    position: unset; }
+
+  .profile_edit_comment_box button {
+    padding: 15px 37px; }
+
+  .profile_body {
+    margin-left: 0px;
+    padding: 0 10px; }
+
+  .profile_wrapper {
+    display: block; }
+
+  .profile_fluid .profile_nav {
+    position: unset; }
+
+  .company_edit_info_wrapper .costumer_info span {
+    font-size: 13px; }
+
   .common_modal .modal-title {
     font-size: 24px; }
 

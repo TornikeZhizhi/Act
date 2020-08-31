@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	 <meta charset="UTF-8">
+   	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+   	<link rel="stylesheet" type="text/css" href="css/slick.css">
+   	<link rel="stylesheet" type="text/css" href="css/slicktheme.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+<div class="modal fade common_modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+
+
+  
+
+  <!-- Authorizathion recover modal-content -->
+    <div class="modal-content authorization_modal">
+    	<div class="modal_close">
+	  		<div>
+	  			<i class="fas fa-times"></i>
+	  		</div>
+  		</div>
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ავტორიზაცია</h5>
+      </div>
+      <div class="modal-body">
+      	<form class="authorization_form">
+		     	  <div class="field">
+				      <input type="email" id="email-field" name="email-field" required=""> 
+				      <label for="email-field">ელ-ფოსტა</label>
+		   		 </div>
+
+		   		 <div class="field">
+				      <input type="password" id="password-field" name="password-field" required="">
+				      <label for="password-field">პაროლი</label>
+		   		 </div>
+
+		   		 <div class="custom-control custom-checkbox">
+		    	  <input type="checkbox" name="remember" class="custom-control-input" id="remember_checkbox">
+		     		 <label class="custom-control-label" for="remember_checkbox">დამახსოვრება</label>
+		   		 </div>
+
+		   		 <div class="common_modal_button">
+		   		 	<button>შესვლა</button>
+
+		   		 	<div class="modal_error_message">
+		   		 		<span>პაროლი არასწორია</span>
+		   		 	</div>
+		   		 </div>
+
+
+		   		 <div class="pass_recover">
+		   		 		<span>პაროლის აღდგენა</span>
+		   		 </div>  
+     	 	</form>
+	    </div>
+	  </div>
+
+
+
+	  <!-- Pass recover modal-content -->
+	 <div class="modal-content recovery_modal">
+	 	<div class="modal_close">
+	  		<div>
+	  			<i class="fas fa-times"></i>
+	  		</div>
+  		</div>
+  		
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">პაროლის აღდგენა</h5>
+      </div>
+      <div class="modal-body">
+      	<form class="authorization_form">
+		     	  <div class="field">
+				      <input type="email" id="email-field" name="email-field" required=""> 
+				      <label for="email-field">ელ-ფოსტა</label>
+		   		 </div>
+
+
+		   		 <div class="common_modal_button">
+		   		 	<button>პაროლის აღდგენა</button>
+		   		 </div>
+
+		   		 <div class="pass_recover_info">
+		   		 	<span>პაროლის აღსადგენი ბმული 
+						გამოგეგზავნებათ ელფოსტაზე</span>
+		   		 </div>
+
+
+		   		 <div class="auth_link">
+		   		 		<span>ავტორიზაცია</span>
+		   		 </div>  
+     	 	</form>
+	    </div>
+	  </div>
+
+
+	</div>
+</div>
+
+
+
+
+<header>
+	
+	<div class="header_top">
+
+	<div class="logo">
+
+		<a href="">
+			<img src="images/logosvg.svg">
+		</a>
+	</div>
+
+		<div class="header_contact">
+
+			<div class="header_contact_box">
+				<div>
+					<a href="" class="img_link">
+						<!-- <img src="images/call.svg"> -->
+						<i class="fas fa-phone-alt"></i>
+					</a>
+				</div>
+
+				<div class="header_contact_info">
+				
+					<a href="tel:++995	5422 322">
+					+995 5422 322</a>
+				</div>
+				
+
+
+			</div>
+
+				<div class="header_contact_box">
+
+				  	<div>
+						<a href="mailto:info@act-globl.com" class="img_link">
+							<i class="far fa-envelope"></i>
+						</a>
+					</div>
+
+					<div class="header_contact_info">
+					
+						<a href="mailto:info@act-globl.com" aria-label="info@act-globl.com">
+	                               info@act-globl.com
+	                            </a>
+					</div>
+
+
+				
+			
+		   	 </div>
+			<div class="header_contact_box">
+				<div>
+					<a href="www.act-global.com" target="_blank" class="img_link">
+						<!-- <img src="images/call.svg"> -->
+						<i class="fas fa-globe"></i>
+					</a>
+				</div>
+
+				<div class="header_contact_info">
+				
+					<a target="_blank" href="www.act-global.com">
+					www.act-global.com</a>
+				</div>
+				
+
+			</div>
+
+			
+				<div class="language_box">
+
+					<a href="">ENG</a>
+				</div>
+
+				<div id="menu-toggle">
+				  <div id="hamburger">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				  </div>
+				  <div id="cross">
+				    <span></span>
+				    <span></span>
+				  </div>
+				</div>
+
+
+			<div class="header_socials">
+		   	 	<a href="" id="header_fb">
+            		  <i class="fab fa-facebook-f"></i>
+				</a>
+
+
+				<a href="" id="header_fb">
+	              <i class="fab fa-facebook-f"></i>
+				</a>
+
+			</div>
+
+
+		    </div>
+	</div>
+
+
+	<div class="header_bottom">
+		<div class="logo">
+
+		<a href="">
+			<img src="images/ACT Strategist Logo.svg">
+		</a>
+	</div>
+
+	<nav class="header_nav">
+		
+		<ul>
+			<li><a href="">ჩვენს შესახებ</a></li>
+			<li><a class="active" href="">ბლოგი</a></li>
+			<li><a href="">სიახლეები</a></li>
+			<li><a href="">ონლაინ ტრენინგები</a></li>
+			<li class="nav_dropdown">
+				<a href="">რესურსები</a>
+
+				<ul class="dropdown">
+					<li>
+						<a href="">სიახლეები სიახლეები</a>
+					</li>
+					<li>
+						<a href="">სიახლეები</a>
+					</li>
+					<li>
+						<a href="">სიახლეები</a>
+					</li>
+				</ul>
+
+			</li>
+			<li><a href="">FAQ</a></li>
+
+		</ul>
+	</nav>
+
+	<div class="mobile_contact_fluid">
+
+		<div class="header_contact_box">
+				<div>
+					<a href="" class="img_link">
+						<!-- <img src="images/call.svg"> -->
+						<i class="fas fa-phone-alt"></i>
+					</a>
+				</div>
+				<div class="header_contact_info">
+				
+					<a href="tel:++995	5422 322">
+					+995 5422 322</a>
+				</div>
+		</div>
+
+		<div class="header_contact_box">
+
+				  	<div>
+
+						<a href="mailto:info@act-globl.com" class="img_link">
+							<i class="far fa-envelope"></i>
+						</a>
+					</div>
+
+					<div class="header_contact_info">
+					
+						<a href="mailto:info@act-globl.com" aria-label="info@act-globl.com">
+	                               info@act-globl.com
+	                            </a>
+					</div>
+
+
+				
+			
+		   	 </div>
+
+		<div class="header_contact_box">
+				<div class="">
+					<a href="www.act-global.com" target="_blank" class="img_link">
+						<!-- <img src="images/call.svg"> -->
+						<i class="fas fa-globe"></i>
+					</a>
+				</div>
+
+				<div class="header_contact_info">
+				
+					<a target="_blank" href="www.act-global.com">
+					www.act-global.com</a>
+				</div>
+				
+
+			</div>
+
+	</div>
+
+	
+
+	<div class="authorization">
+
+	<!-- before authorizathion -->
+		<a href="" data-toggle="modal" data-target="#exampleModal">
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<span>ავტორიზაცია</span>
+		</a>
+
+	<!-- after authorization div-->
+		
+	<!-- <div class="nav_dropdown auth_dropdown">
+		<span>გ.გიორგაძე</span>
+
+		<ul class="dropdown">
+				<li>
+						<a href="">პირადი ინფორმაცია</a>
+					</li>
+					<li>
+						<a href="">ჯავშანი</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-sign-out-alt"></i> გამოსვლა</a>
+			</li>
+		</ul>
+	</div> -->
+
+	</div>
+	</div>
+
+	
+</header>
+
+
+
+
+
+
+<div class="profile_fluid">
+	<div class="profile_container">
+			<div class="profile_title title text-center">
+					<h3>პირადი ინფორმაცია</h3>
+				</div>
+				<div class="profile_title mail_title title text-center">
+					<h3>ელ-ფოსტის ცვლილება</h3>
+				</div>
+				<div class="profile_title password_title title text-center">
+					<h3>პაროლის ცვლილება</h3>
+				</div>
+
+	<div class="profile_wrapper">
+		<div class="profile_nav">
+
+			<ul>
+				<li class="book_tab active"><a href="">ჯავშანი</a> </li>
+				<li class="private_information_tab"><a href="">პირადი ინფორმაცია</a> </li>
+				<li> <a href=""> <i class="fas fa-sign-out-alt"></i>გასვლა</a></li>
+			</ul>
+
+		</div>
+
+
+		<div class="profile_body">
+
+			<div class="private_information">
+
+				
+
+					<div class="private_information_container">
+
+						<div class="mail_info">
+							<div>
+								<span>ძირითადი ელ-ფოსტა gorgigiorgadze@gmail.com</span>
+								<span class="mail_editing">რედაქტირება</span>
+							</div>
+						</div>
+
+
+						<div class="password_info">
+							<div>	
+								<span>პაროლის ცვლილება</span>
+								<span class="password_editing">რედაქტირება</span>
+							</div>
+						</div>
+
+					</div>
+
+
+ 					<div class="recovery_fluid" id="mail_change_wrapper">
+
+ 						<div class="recovery_header_info">
+
+ 							<span>ძირითადი ელფოსტა:  gorgigiorgadze@gmail.com</span>
+ 						</div>
+
+
+ 						<div class="common_recovery_box">
+ 							<form>
+ 								
+ 								<label>ახალი ელ-ფოსტა</label>
+
+ 								<input type="mail" name="">
+ 								<button>შენახვა</button>
+ 							</form>
+ 						</div>
+ 					</div>
+
+
+ 					<div class="recovery_fluid" id="password_change_wrapper">
+ 						<div class="common_recovery_box">
+ 							<form class="">
+ 								
+ 								<div>
+	 								<label>ამჟამინდელი პაროლი</label>
+	 								<input type="text" name="">
+ 								</div>
+
+ 								<div class="new_pass_box">
+	 								<label>ახალი პაროლი</label>
+	 								<input type="password" name="">
+	 								<i class="far fa-eye default"></i>
+	 								<i class="far fa-eye-slash slashed"></i>
+ 								</div>
+
+ 								<div class="new_pass_box">
+	 								<label>დაადასტურეთ ახალი პაროლი</label>
+	 								<input type="password" name="">
+	 								<i class="far fa-eye default"></i>
+	 								<i class="far fa-eye-slash slashed"></i>
+ 								</div>
+
+
+ 								<button>პაროლის შეცვლა</button>
+ 							</form>
+ 						</div>
+ 						
+ 					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+	<footer>
+		
+		<div>
+			
+		<a href=""  target="_blank" id="footer_social">
+     		 <i class="fab fa-facebook-f"></i>
+		</a>
+
+		<a href=""  target="_blank" id="footer_social">
+     		 <i class="fab fa-facebook-f"></i>
+		</a>
+
+		</div>
+
+		<div>
+			
+		<span>© 2020 ACT. All Rights Reserved.</span>
+		</div>
+
+		<div class="created">
+			<span>created by</span>
+			<a href="www.ew.ge" target="_blank">
+				
+				<img src="images/ew@2x.png" alt="">
+			</a>
+		</div>
+	</footer>
+
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+
+
+<script src="https://unpkg.com/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="js/slick.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>				
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -3659,3 +3659,445 @@ left: 10px;
 		}
 	}
 }
+.profile_wrapper {
+	display: flex;
+}
+.profile_fluid {
+	padding: 50px 0;
+	 min-height: 75vh;
+	.profile_container {
+	
+	max-width: 1170px;
+	margin: 0 auto;	
+	}
+	.profile_nav {
+		flex:0 0 270px;
+		max-width: 270px;
+		width: 100%;
+		position: sticky;
+		align-self: flex-start;
+		left: 0;
+		top: 140px;
+
+		ul {
+			width: 100%;
+			li {
+				border: 1px solid #E5E5E5;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-family: 'Conv_bpg-arial-webfont';
+				font-size: 16px;
+				color: #202020;
+				margin-bottom: 15px;
+				cursor: pointer;
+				a {
+				color: #202020;
+				font-family: 'Conv_bpg-arial-webfont';
+				width: 100%;
+			    height: 100%;
+			    padding: 15px 10px;
+			    text-align: center;
+				}
+
+				i {
+					margin-right: 6px;
+				}
+
+				&.active {
+					color: #fff;
+					border-color: #DA3429;
+
+					a {
+
+					background-color: #DA3429;
+					color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.profile_body {
+   
+	margin-left: 20px;
+	width: 100%;
+	.book_info_box {
+		display: flex;	
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #E5E5E5;
+			margin-bottom: 20px;
+		}
+	}
+
+	.book_date_time {
+
+		border: 1px solid #2C9D33;
+		flex:0 0 170px;
+		max-width: 170px;
+		width: 100%;
+		padding: 10px 10px;
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.book_status {
+			color: #2C9D33;
+		}
+
+
+		&.end_book {
+			border-color: #DA3429;
+			.book_status {
+				color: #DA3429;
+
+			}
+		}
+
+		span {
+			color: #202020;
+			font-size: 18px;
+			font-family: 'Conv_bpg-arial-webfont';
+
+			&:not(:last-child){
+				margin-bottom: 3px;
+			}
+		}
+	}
+
+	.book_center_info {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 15px;
+    padding: 3px 0;
+		span {
+
+			font-family: 'Conv_bpg-arial-webfont';
+			color: #202020;
+			font-size: 16px;
+			    white-space: nowrap;
+		}
+
+		.company_name {
+			display: flex;
+			flex-direction: column;
+		
+		}
+
+
+		.code_box {
+
+			.book_id {
+				background-color: #F5F5F5;
+				padding: 3px 8px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+	.book_link_wrapper {
+			margin-left: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			span {
+					font-family: 'Conv_bpg-arial-webfont';
+			color: #202020;
+			font-size: 16px;
+			}
+
+			.book_link {
+				border: 1px solid #DA3429;
+				color: #DA3429;
+				cursor: pointer;
+					font-family: 'Conv_bpg-arial-webfont';
+				padding: 10px 40px;
+				margin-top: 10px;
+				transition: all .3s;
+				&:hover {
+					background:#DA3429;
+					color: #fff;
+				}
+			}
+		}
+
+.book_info_box:not(:last-child) {
+			border-bottom: 1px solid #E5E5E5;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+	
+	}		
+
+
+	.book_info_container {
+		margin-bottom: 50px;
+	}
+
+
+#private_info_section {
+	display: none;
+}	
+
+
+.private_information {
+
+	.title {
+		color: #202020;
+	}
+
+
+	.mail_info {
+		
+		border-bottom: 1px solid #E5E5E5;
+
+		div {
+padding: 10px 15px;
+    background-color: #FBFBFB;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+		}
+
+	}
+
+	.password_info {
+
+		div {
+    display: flex;
+    justify-content: space-between;
+			padding: 10px 15px;
+		}
+	}
+
+	span {
+		color: #202020;
+		font-family: 'Conv_bpg-arial-webfont';
+	}
+
+.mail_editing,.password_editing {
+	cursor: pointer;
+}
+
+}
+
+.profile_title {
+	margin-bottom: 30px;
+}
+%font-color {
+
+	color: #202020;
+	font-family: 'Conv_bpg-arial-webfont';
+}
+
+.company_info_inner_fluid {
+
+	.company_info_inner_container {
+
+	border: 1px solid #E5E5E5;
+	margin-bottom: 30px;
+	}
+	.company_info_header {
+
+		background-color: #FCFCFC;
+		text-align: center;
+		position: relative;
+		border-bottom: 1px solid #E5E5E5;
+
+		.company_edit {
+			
+			@extend %font-color;
+			cursor: pointer;
+		}
+
+		.company_title {
+			padding: 10px 0;
+			h4 {
+				color: #202020;
+				font-size: 16px;
+			}
+		}
+
+		.company_edit_box {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #EFEFEF;
+			height: 100%;
+		    padding: 0 10px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+
+		    a {
+		    	@extend %font-color;
+			cursor: pointer;
+			display: none;
+		    }
+
+		}	
+
+
+	}
+}
+
+
+.company_edit_info_wrapper {
+display: flex;
+    flex-direction: column;
+    padding: 20px 0 50px;
+
+    align-items: center;
+
+    .costumer_info {
+    	margin-bottom: 10px;
+    }
+    .successful_link {
+    	background-color: #DA3429;
+    
+    	margin: 15px 0 5px;
+    display: inline-block;
+    padding: 8px 45px;
+
+
+    	a {
+    font-family: 'Conv_bpg-arial-webfont';
+    		font-size: 16px;
+    		color: #fff;
+
+    		img {
+    			height: 18px;
+    		}
+    	}
+    }
+}
+
+
+.profile_edit_comment_box {
+
+
+ 	label {
+ 		@extend %font-color;
+ 		font-size: 16px;
+ 		margin-bottom: 0;
+ 	}
+
+ 	textarea {
+ 		width: 100%;
+ 		border: 1px solid #E5E5E5;
+ 		height: 185px;
+ 		resize: none;
+ 		@extend %font-color;
+ 		margin: 5px 0;
+ 	}
+
+ 	button {
+ 		    color: #DA3429;
+		    border: 1px solid #DA3429;
+		    padding: 15px 72px;
+		    max-width: 370px;
+		    margin: 7px auto;
+		    display: block;
+		    background-color: #fff;
+		    outline: none;
+		    cursor: pointer;
+ 		&:hover{
+ 			background:#DA3429;
+ 			color: #FFF;
+ 		}
+
+ 	}
+}
+
+.recovery_header_info {
+	border-bottom: 1px solid #E5E5E5;
+	padding: 5px 5px 15px 15px;
+
+	span {
+		@extend %font-color;
+	}
+}
+
+.common_recovery_box {
+
+	form {
+		max-width: 400px;
+    width: 100%;
+    margin: 35px auto 0;
+		label,input {
+			display: block;
+			
+
+		@extend %font-color;
+
+			
+		}
+
+
+		input {
+			width: 100%;
+			border: 1px solid #E5E5E5;
+			padding: 10px 10px;
+		}
+
+		button {
+			margin-top: 20px;
+			background-color: #DA3429;
+			color: #fff;
+			width: 100%;
+			padding: 15px 15px;
+			cursor: pointer;
+		}
+
+	}
+}
+
+#password_change_wrapper {
+
+	form {
+		margin: 0 auto;
+	}
+}
+
+.new_pass_box,.confirm_new_pass_box {
+
+	position: relative;
+
+	i {
+	    position: absolute;
+	    bottom: 16px;
+	    right: 10px;
+	    z-index: 10;
+	    cursor: pointer;
+	}
+
+	.slashed {
+		display: none;
+	}
+}
+
+#mail_change_wrapper, #password_change_wrapper,.mail_title, .password_title {
+	display: none;
+}
+
+.time_editing_row {
+
+	max-width: 650px;
+	width: 100%;
+}
+
+.time_editing_row {
+	display: none;
+
+	&.show {
+		display: flex;
+	}
+}
