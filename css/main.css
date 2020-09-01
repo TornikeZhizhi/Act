@@ -2829,6 +2829,12 @@ a[aria-label=Next] {
 .authorization .auth_dropdown span {
   white-space: nowrap; }
 
+.fb-customerchat iframe {
+  visibility: hidden !important; }
+
+.fb-customerchat .fb_customer_chat_bounce_in_v2 {
+  visibility: visible !important; }
+
 @media only screen and (min-width: 1100px) {
   .header_nav {
     margin: 0 2% 0% 2%; } }

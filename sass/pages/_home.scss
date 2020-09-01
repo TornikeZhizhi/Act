@@ -4112,4 +4112,12 @@ display: flex;
 }
 
 
-
+ 
+  .fb-customerchat iframe {
+      visibility:hidden !important;
+  }
+  
+    .fb-customerchat .fb_customer_chat_bounce_in_v2 {
+      
+      visibility:visible !important;
+  }
