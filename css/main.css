@@ -2829,10 +2829,6 @@ a[aria-label=Next] {
 .authorization .auth_dropdown span {
   white-space: nowrap; }
 
-.fb_reset {
-  position: absolute;
-  z-index: 7; }
-
 @media only screen and (min-width: 1100px) {
   .header_nav {
     margin: 0 2% 0% 2%; } }
