@@ -3663,7 +3663,7 @@ left: 10px;
 	display: flex;
 }
 .profile_fluid {
-	padding: 50px 0;
+
 	 min-height: 75vh;
 	.profile_container {
 	
@@ -4100,4 +4100,20 @@ display: flex;
 	&.show {
 		display: flex;
 	}
+}
+
+.authorization {
+	.auth_dropdown {
+
+		span {
+			white-space: nowrap;
+		}
+	}
+}
+
+
+
+.fb_reset {
+	position: absolute;
+    z-index: 7;
 }
