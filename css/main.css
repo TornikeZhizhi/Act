@@ -2510,7 +2510,7 @@ a[aria-label=Next] {
 
 #teamReview .form-control {
   width: 100% !important;
-  padding: 17px 20px;
+  padding: 14px 20px;
   font-family: 'Conv_bpg-arial-webfont';
   border: 1px solid #E5E5E5;
   color: #202020; }
@@ -2598,7 +2598,11 @@ a[aria-label=Next] {
             background-color: #DA3429;
             color: #fff; }
 
+.profile_edit_comment_box {
+  padding-bottom: 30px; }
+
 .profile_body {
+  padding-top: 50px;
   margin-left: 20px;
   width: 100%; }
   .profile_body .book_info_box {
@@ -2701,7 +2705,8 @@ a[aria-label=Next] {
   cursor: pointer; }
 
 .profile_title {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .company_info_inner_fluid .company_info_header .company_edit, .company_info_inner_fluid .company_info_header .company_edit_box a, .profile_edit_comment_box label, .profile_edit_comment_box textarea, .recovery_header_info span, .common_recovery_box form label, .common_recovery_box form input {
   color: #202020;
@@ -2848,6 +2853,12 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .profile_body {
+    padding-top: 10px; }
+
+  .profile_edit_comment_box {
+    padding-bottom: 5px; }
+
   .company_edit_info_wrapper {
     padding: 20px 0 10px; }
 
@@ -2862,7 +2873,8 @@ a[aria-label=Next] {
     padding: 10px 5px; }
 
   .profile_title {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    margin-top: 5px; }
     .profile_title h3 {
       font-size: 20px; }
 

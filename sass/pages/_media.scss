@@ -25,6 +25,13 @@
 }
 
 @media only screen and (max-width: 992px) {
+.profile_body {
+    padding-top: 10px;
+}
+.profile_edit_comment_box {
+    padding-bottom: 5px;
+}
+
 .company_edit_info_wrapper {
     
     padding: 20px 0 10px;
@@ -44,6 +51,7 @@
 }
 .profile_title  {
     margin-bottom: 15px;
+        margin-top: 5px;
 
     h3 {
         font-size: 20px;

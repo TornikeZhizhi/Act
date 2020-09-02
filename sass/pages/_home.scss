@@ -3593,7 +3593,7 @@ left: 10px;
 #teamReview {
 	.form-control {
 		width: 100% !important;
-		padding: 17px 20px;
+		padding: 14px 20px;
     font-family: 'Conv_bpg-arial-webfont';
     border: 1px solid #E5E5E5;
     color: #202020;
@@ -3720,10 +3720,12 @@ left: 10px;
 }
 
 
-
+.profile_edit_comment_box {
+	padding-bottom: 30px;
+}
 
 .profile_body {
-   
+   	padding-top: 50px;
 	margin-left: 20px;
 	width: 100%;
 	.book_info_box {
@@ -3891,6 +3893,7 @@ padding: 10px 15px;
 
 .profile_title {
 	margin-bottom: 30px;
+	margin-top: 30px;
 }
 %font-color {
 
