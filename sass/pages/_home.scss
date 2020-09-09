@@ -222,7 +222,7 @@ color: #212529;
 			font-size: 16px;
 			    white-space: nowrap;
 			    transition: all .4s;
-			    word-spacing: 6px;
+			 
 			    &:hover{
 			    	opacity:1;
 			    }
@@ -1313,7 +1313,7 @@ p {
 	    right: 0;
 	    content: "";
 	    width: 0%;
-	    height: 2px;
+	    height: 3px;
 	    background-color: #E31F26;
 	    transition: all .4s
     }
@@ -3366,7 +3366,7 @@ flex-grow: 1;
     }
 }
 .verification_button_box {
-	width: calc(100% - 15px);
+	width: calc(100% - -6px);
 	border: 1px solid #DA3429;
     margin-top: 29px;
     height: 50px;
@@ -3435,7 +3435,7 @@ flex-grow: 1;
 		padding-left: 0;
 		padding-right: 0;
 		input {
-			width: calc(100% - 24px);
+			width: calc(100% - 5px);
 		}
 	}
 }
@@ -4123,4 +4123,29 @@ display: flex;
     .fb-customerchat .fb_customer_chat_bounce_in_v2 {
       
       visibility:visible !important;
+  }
+
+  .resourse_new_wrapper div:nth-child(3) {
+
+  	* {
+
+  			font-family: 'Conv_bpg-arial-webfont';
+  	}
+  		
+  
+  }
+
+
+  #teamReview .form-control {
+  	padding: 13px 20px !important;
+  }
+
+  #teamReview .form-control {
+
+  	font-family: 'Conv_bpg-arial-webfont' !important;
+
+
+  	option {
+  		font-family: 'Conv_bpg-arial-webfont';
+  	}
   }

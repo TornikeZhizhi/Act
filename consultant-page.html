@@ -470,55 +470,62 @@
         <div>
             <h2 class="title">დაწერეთ შეფასება</h2>
         </div>
+<div style="display: block;">
+    <form id="teamReview" data-request="Team::onReview" data-request-success="if(data.success){$('#teamReview')[0].reset();$('.success-message').show();}" data-request-validate="" data-request-update="'Team::reviewItems':'#_Elliot_ContentManagement_Team_Review_List'">
 
+      <div class="form-name">
         <div>
-            <form action="">
-                <div class="form-name">
-
-                    <div>
-                        <input type="text" name="name" placeholder="name">
-                        <div class="form_error">
-                          <span data-validate-for="name" class="visible">The name field is required.</span>
-                        </div>
-                    </div>
-
-                    <div> 
-                        <input type="text" name="email" placeholder="email">
-                        <div class="form_error">
-                          <span data-validate-for="email" class="visible">The email field is required.</span>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div>
-                    <input type="text" placeholder="კომპანიის დასახელება">
-                </div>
-                 <div class="form-name">
-                    <input type="text" placeholder="თანამდებობა">
-                    <select class="form-control">
-                        <option>ინდუსტრია</option>
-                        <option>ინდუსტრია1</option>
-                        <option>ინდუსტრია2</option>
-                        <option>ინდუსტრია3</option>
-                      
-                       
-                     </select>
-                </div>
-                <div>
-                    <textarea placeholder="დაწერეთ შეფასება"></textarea>
-                </div>
-
-                <div class="submit">
-                    <input type="submit" value=" შეფასების გამოქვეყნება">
-                </div>
-
-            </form>
-
-            <div class="success-message">
-                <span>თქვენი შეფასება გამოქვეყნდა</span>
-            </div>
+          <input type="text" name="name" placeholder="სახელი და გვარი">
+          <div class="form_error">
+            <span data-validate-for="name"></span>
+          </div>
         </div>
+        <div>
+          <input type="text" name="email" placeholder="ელ. ფოსტა">
+          <div class="form_error">
+            <span data-validate-for="email"></span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="text" name="company_name" placeholder="ორგანიზაციის იურიდიული დასახელება">
+        <div class="form_error">
+          <span data-validate-for="company_name"></span>
+        </div>
+      </div>
+      <div>
+        <input type="text" class="form-control" id="position" name="position" placeholder="პოზიცია" autocomplete="off">
+        <div class="form_error">
+          <span data-validate-for="position"></span>
+        </div>
+      </div>
+      <div>
+        <select name="industry" class="form-control">
+          <option disabled="" selected="">ინდუსტრია</option>
+          <option value="1">სოციალური ქსელი</option>
+          <option value="2">ონლაინ სტატია</option>
+          <option value="3">პირადი რეკომენდაცია</option>
+          <option value="4">ვებსაიტი</option>
+          <option value="5">სხვა</option>
+        </select>
+        <div class="form_error">
+          <span data-validate-for="where_did_you_find_out_about_us"></span>
+        </div>
+      </div>
+      <div>
+        <textarea name="review" placeholder="რეკომენდაცია"></textarea>
+        <div class="form_error">
+          <span data-validate-for="review"></span>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" value="დაამატე რეკომენდაცია">
+      </div>
+    </form>
+    <div class="success-message" style="display:none;">
+      <span>შეფასება წარმატებით გაიგზავნა</span>
+    </div>
+  </div>
 
         <div class="form-background">
 

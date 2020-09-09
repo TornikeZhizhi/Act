@@ -204,8 +204,7 @@ footer > div:first-child {
       opacity: 0.4;
       font-size: 16px;
       white-space: nowrap;
-      transition: all .4s;
-      word-spacing: 6px; }
+      transition: all .4s; }
       .header_nav ul a:hover {
         opacity: 1; }
       .header_nav ul a.active {
@@ -982,7 +981,7 @@ p {
     right: 0;
     content: "";
     width: 0%;
-    height: 2px;
+    height: 3px;
     background-color: #E31F26;
     transition: all 0.4s; }
   .position_bold * {
@@ -2348,7 +2347,7 @@ a[aria-label=Next] {
     cursor: pointer; }
 
 .verification_button_box {
-  width: calc(100% - 15px);
+  width: calc(100% - -6px);
   border: 1px solid #DA3429;
   margin-top: 29px;
   height: 50px;
@@ -2400,7 +2399,7 @@ a[aria-label=Next] {
     padding-left: 0;
     padding-right: 0; }
     .phin_code_wrapper .form-group input, #_Elliot_ContentManagement_Book_Phone_Pin_Code_Input .form-group input {
-      width: calc(100% - 24px); }
+      width: calc(100% - 5px); }
 
 .common_modal .modal-content {
   padding: 10px 0 35px;
@@ -2839,6 +2838,17 @@ a[aria-label=Next] {
 
 .fb-customerchat .fb_customer_chat_bounce_in_v2 {
   visibility: visible !important; }
+
+.resourse_new_wrapper div:nth-child(3) * {
+  font-family: 'Conv_bpg-arial-webfont'; }
+
+#teamReview .form-control {
+  padding: 13px 20px !important; }
+
+#teamReview .form-control {
+  font-family: 'Conv_bpg-arial-webfont' !important; }
+  #teamReview .form-control option {
+    font-family: 'Conv_bpg-arial-webfont'; }
 
 @media only screen and (min-width: 1100px) {
   .header_nav {
