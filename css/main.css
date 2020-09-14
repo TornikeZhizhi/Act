@@ -2850,6 +2850,10 @@ a[aria-label=Next] {
   #teamReview .form-control option {
     font-family: 'Conv_bpg-arial-webfont'; }
 
+.competense_inner {
+  min-height: unset !important;
+  margin: 0 auto 50px !important; }
+
 @media only screen and (min-width: 1100px) {
   .header_nav {
     margin: 0 2% 0% 2%; } }
@@ -2863,6 +2867,9 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .competense_inner {
+    margin: 0 auto 10px !important; }
+
   .profile_body {
     padding-top: 10px; }
 
