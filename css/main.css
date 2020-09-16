@@ -981,8 +981,7 @@ p {
     right: 0;
     content: "";
     width: 0%;
-    height: 3px;
-    background-color: #E31F26;
+    border-bottom: 3px solid #E31F26;
     transition: all 0.4s; }
   .position_bold * {
     font-weight: bold; }
