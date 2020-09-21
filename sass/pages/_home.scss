@@ -1993,7 +1993,7 @@ header {
 	.recourses_img {
 		text-align: center;
 		img {
-			height: 230px;
+			height: 240px;
 			width: 60%;
 			object-fit: cover;
 		}
@@ -3295,8 +3295,9 @@ flex-grow: 1;
 .new_resources_box {
 	display: flex;
 	.recourses_img {
-		width: 210px;
+		width: 160px;
     	margin-right: 20px;
+    	flex:0 0 160px;
 	}
 
 	 .recourses_img img{
