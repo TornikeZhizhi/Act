@@ -1296,7 +1296,7 @@ textarea.form-control {
     top: 35px;
     left: 0;
     border: 1px solid #C9C9C9;
-    padding: 10px;
+    padding: 10px 10px 0;
     background: #fff;
     display: none; }
     .nav_dropdown ul a {
@@ -1914,6 +1914,10 @@ a[aria-label=Next] {
   .training_box .training_info {
     flex-grow: 1;
     padding-left: 30px; }
+    .training_box .training_info.bottom_links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
     .training_box .training_info .training_title * {
       font-size: 18px;
       color: #202020; }
@@ -2853,6 +2857,9 @@ a[aria-label=Next] {
 .competense_inner {
   min-height: unset !important;
   margin: 0 auto 50px !important; }
+
+#consultant_anchor {
+  padding-top: 20px; }
 
 @media only screen and (min-width: 1100px) {
   .header_nav {
