@@ -71,7 +71,8 @@ select {
   border-radius: 20px;
   padding: 6px 10px 6px 13px;
   margin-left: 20px;
-  margin-bottom: 2px; }
+  margin-bottom: 4px;
+  margin-top: 4px; }
   .authorization a {
     color: #000;
     display: flex;
@@ -2531,7 +2532,8 @@ a[aria-label=Next] {
   left: -50px;
   border: 1px solid #C9C9C9;
   padding: 10px;
-  background: #fff; }
+  background: #fff;
+  z-index: 100; }
   .auth_dropdown .dropdown:after {
     top: -5px;
     left: 120px; }
@@ -3150,8 +3152,8 @@ a[aria-label=Next] {
     display: block; }
 
   .nav_dropdown:after {
-    top: 8px;
-    right: 11px; }
+    top: 4px;
+    right: -1px; }
 
   header .header_top {
     background-color: #fff;
