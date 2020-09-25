@@ -11,10 +11,10 @@ $('.slider-for').slick({
 
 });
 
-var Sliderlength = $(".slider-for figure").not(".slick-cloned").length
+var Sliderlength = $(".slider-for a").not(".slick-cloned").length
 var current1 = 0;
 var current2 = 0;
- var activeSource = Number($(".slider-for figure.slick-active").not(".slick-cloned").attr("data-slick-index"))
+ var activeSource = Number($(".slider-for a.slick-active").not(".slick-cloned").attr("data-slick-index"))
 
 
 if (activeSource == 0) {
@@ -42,7 +42,7 @@ else {
 }
 
 $(".slider-for").on('afterChange', function(event, slick, currentSlide) {
-  var activeSource = Number($(".slider-for figure.slick-active").not(".slick-cloned").attr("data-slick-index"))
+  var activeSource = Number($(".slider-for a.slick-active").not(".slick-cloned").attr("data-slick-index"))
 
 if (activeSource == 0) {
 

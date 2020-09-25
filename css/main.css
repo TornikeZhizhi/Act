@@ -69,7 +69,9 @@ select {
   border: 1px solid #C9C9C9;
   background-color: #F8F8F8;
   border-radius: 20px;
-  padding: 7px 16px; }
+  padding: 6px 10px 6px 13px;
+  margin-left: 20px;
+  margin-bottom: 2px; }
   .authorization a {
     color: #000;
     display: flex;
@@ -2874,6 +2876,10 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .authorization {
+    margin-right: 10px;
+    margin-left: 0; }
+
   .competense_inner {
     margin: 0 auto 10px !important; }
 
