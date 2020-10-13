@@ -323,16 +323,17 @@ footer > div:first-child {
   background-color: #fff; }
 
 .slider-for figure {
-  position: relative; }
-  .slider-for figure:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 10; }
+  position: relative;
+  /*&:after {
+  	position:absolute;
+  	content: "";
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-color: rgba(0,0,0,.3);
+  	z-index: 10;
+  }*/ }
   .slider-for figure h2 {
     position: absolute;
     top: 50%;
@@ -1675,7 +1676,7 @@ a[aria-label=Next] {
   color: #E31F26; }
 
 .news_inner_fluid {
-  max-width: 800px;
+  max-width: 60vw;
   margin: 45px auto; }
 
 .news_inner_title {
@@ -2878,6 +2879,9 @@ a[aria-label=Next] {
   .header_top .logo {
     display: none; } }
 @media only screen and (max-width: 992px) {
+  .news_inner_fluid {
+    max-width: 100%; }
+
   .authorization {
     margin-right: 10px;
     margin-left: 0; }

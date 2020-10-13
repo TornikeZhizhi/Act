@@ -404,7 +404,7 @@ border: 1px solid #D8D8D8;
 	figure {
 		position: relative;
 
-		&:after {
+		/*&:after {
 			position:absolute;
 			content: "";
 			top: 0;
@@ -413,7 +413,7 @@ border: 1px solid #D8D8D8;
 			height: 100%;
 			background-color: rgba(0,0,0,.3);
 			z-index: 10;
-		}
+		}*/
 
 
 		 h2 {
@@ -2370,7 +2370,7 @@ a[aria-label=Next] {
 
 .news_inner_fluid {
 
-	max-width: 800px;
+	max-width: 60vw;
 	margin: 45px auto;
 }
 
