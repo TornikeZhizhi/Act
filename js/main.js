@@ -227,7 +227,7 @@ Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
             }
             $(".about_tabs_box span").eq(index).text(x)
             x+=1;
-          },50);
+          },30);
           })
       }else {
 
@@ -245,7 +245,7 @@ Number($(".about_tabs_box").eq(1).find("span").attr("data-id"))];
               }
               $(".about_tabs_box span").eq(index).text(x)
               x+=1;
-            },50);
+            },30);
             })
 
             $(window).off("scroll");
