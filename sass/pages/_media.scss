@@ -8,7 +8,7 @@
 }
 @media only screen and (min-width: 992px) {
 
-   
+
 
     .header_contact {
         padding-left: 100px;
@@ -25,7 +25,9 @@
 }
 
 @media only screen and (max-width: 992px) {
-
+   .blogs_fluid .blog_container {
+    max-width:100%;
+   }
     .news_inner_fluid {
     max-width:100%;
     }

@@ -2484,8 +2484,9 @@ a[aria-label=Next] {
 	.blog_container {
 
 		display: flex;
-		max-width: 1070px;
-		margin: 0 auto;
+		max-width: 71vw;
+    margin: 0 auto;
+    justify-content: center;
 		
 
 		.blog_left_tabs {
@@ -2569,7 +2570,7 @@ a[aria-label=Next] {
 }
 .blog_box_wrapper {
 	padding-right: 40px;
-
+	flex-grow: 1;
 
 
 	.blog_box_img {
